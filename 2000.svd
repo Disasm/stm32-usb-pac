@@ -2031,70 +2031,70 @@
                     <fields>
                         <field>
                             <name>MPSIZ</name>
-                            <description>MPSIZ</description>
+                            <description>Maximum packet size</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>11</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>USBAEP</name>
-                            <description>USBAEP</description>
+                            <description>USB active endpoint</description>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EONUM_DPID</name>
-                            <description>EONUM/DPID</description>
+                            <description>Even/odd frame</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
                         <field>
                             <name>NAKSTS</name>
-                            <description>NAKSTS</description>
+                            <description>NAK status</description>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
                         <field>
                             <name>EPTYP</name>
-                            <description>EPTYP</description>
+                            <description>Endpoint type</description>
                             <bitOffset>18</bitOffset>
                             <bitWidth>2</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>STALL</name>
-                            <description>STALL</description>
+                            <description>STALL handshake</description>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>TXFNUM</name>
-                            <description>TXFNUM</description>
+                            <description>TxFIFO number</description>
                             <bitOffset>22</bitOffset>
                             <bitWidth>4</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>CNAK</name>
-                            <description>CNAK</description>
+                            <description>Clear NAK</description>
                             <bitOffset>26</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
                             <name>SNAK</name>
-                            <description>SNAK</description>
+                            <description>Set NAK</description>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
                             <name>SD0PID_SEVNFRM</name>
-                            <description>SD0PID/SEVNFRM</description>
+                            <description>Set DATA0 PID</description>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
@@ -2108,14 +2108,14 @@
                         </field>
                         <field>
                             <name>EPDIS</name>
-                            <description>EPDIS</description>
+                            <description>Endpoint disable</description>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EPENA</name>
-                            <description>EPENA</description>
+                            <description>Endpoint enable</description>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -2214,91 +2214,93 @@
                     <fields>
                         <field>
                             <name>MPSIZ</name>
-                            <description>MPSIZ</description>
+                            <description>Maximum packet size</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>11</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>USBAEP</name>
-                            <description>USBAEP</description>
+                            <description>USB active endpoint</description>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EONUM_DPID</name>
-                            <description>EONUM/DPID</description>
+                            <description>Even odd frame/Endpoint data
+                                PID</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
                         <field>
                             <name>NAKSTS</name>
-                            <description>NAKSTS</description>
+                            <description>NAK status</description>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
                         <field>
                             <name>EPTYP</name>
-                            <description>EPTYP</description>
+                            <description>Endpoint type</description>
                             <bitOffset>18</bitOffset>
                             <bitWidth>2</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>SNPM</name>
-                            <description>SNPM</description>
+                            <description>Snoop mode</description>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>STALL</name>
-                            <description>STALL</description>
+                            <description>STALL handshake</description>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>CNAK</name>
-                            <description>CNAK</description>
+                            <description>Clear NAK</description>
                             <bitOffset>26</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
                             <name>SNAK</name>
-                            <description>SNAK</description>
+                            <description>Set NAK</description>
                             <bitOffset>27</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
                             <name>SD0PID_SEVNFRM</name>
-                            <description>SD0PID/SEVNFRM</description>
+                            <description>Set DATA0 PID/Set even
+                                frame</description>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
                             <name>SODDFRM</name>
-                            <description>SODDFRM</description>
+                            <description>Set odd frame</description>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
                             <name>EPDIS</name>
-                            <description>EPDIS</description>
+                            <description>Endpoint disable</description>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EPENA</name>
-                            <description>EPENA</description>
+                            <description>Endpoint enable</description>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -2423,31 +2425,35 @@
                     <fields>
                         <field>
                             <name>XFRC</name>
-                            <description>XFRC</description>
+                            <description>Transfer completed
+                                interrupt</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>EPDISD</name>
-                            <description>EPDISD</description>
+                            <description>Endpoint disabled
+                                interrupt</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>STUP</name>
-                            <description>STUP</description>
+                            <description>SETUP phase done</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>OTEPDIS</name>
-                            <description>OTEPDIS</description>
+                            <description>OUT token received when endpoint
+                                disabled</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>B2BSTUP</name>
-                            <description>B2BSTUP</description>
+                            <description>Back-to-back SETUP packets
+                                received</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
