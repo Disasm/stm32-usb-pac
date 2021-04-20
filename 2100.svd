@@ -1200,49 +1200,6 @@
                         </field>
                     </fields>
                 </register>
-                <register>
-                    <name>GRXSTSP_Peripheral</name>
-                    <displayName>GRXSTSP_Peripheral</displayName>
-                    <description>OTG_HS status read and pop register
-                        (peripheral mode)</description>
-                    <alternateRegister>OTG_HS_GRXSTSP_Host</alternateRegister>
-                    <addressOffset>0x20</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>EPNUM</name>
-                            <description>Endpoint number</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>4</bitWidth>
-                        </field>
-                        <field>
-                            <name>BCNT</name>
-                            <description>Byte count</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>11</bitWidth>
-                        </field>
-                        <field>
-                            <name>DPID</name>
-                            <description>Data PID</description>
-                            <bitOffset>15</bitOffset>
-                            <bitWidth>2</bitWidth>
-                        </field>
-                        <field>
-                            <name>PKTSTS</name>
-                            <description>Packet status</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>4</bitWidth>
-                        </field>
-                        <field>
-                            <name>FRMNUM</name>
-                            <description>Frame number</description>
-                            <bitOffset>21</bitOffset>
-                            <bitWidth>4</bitWidth>
-                        </field>
-                    </fields>
-                </register>
             </registers>
         </peripheral>
         <peripheral>

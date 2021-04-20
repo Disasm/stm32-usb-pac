@@ -1080,18 +1080,6 @@
                         </field>
                     </fields>
                 </register>
-                <register><name>GRXSTSP_Device</name><description>OTG status read and pop (device mode)</description><addressOffset>32</addressOffset><size>32</size><access>read-only</access><resetValue>0</resetValue><fields><field><name>STSPHST</name><description>Status phase start</description><bitOffset>27</bitOffset><bitWidth>1</bitWidth></field>
-                    <field><name>FRMNUM</name><description>Frame number</description><bitOffset>21</bitOffset><bitWidth>4</bitWidth></field>
-                    <field><name>PKTSTS</name><description>Packet status</description><bitOffset>17</bitOffset><bitWidth>4</bitWidth></field>
-                    <field><name>DPID</name><description>Data PID</description><bitOffset>15</bitOffset><bitWidth>2</bitWidth></field>
-                    <field><name>BCNT</name><description>Byte count</description><bitOffset>4</bitOffset><bitWidth>11</bitWidth></field>
-                    <field><name>EPNUM</name><description>Endpoint number</description><bitOffset>0</bitOffset><bitWidth>4</bitWidth></field>
-                </fields></register>
-                <register><name>GRXSTSP_Host</name><description>OTG status read and pop (host mode)</description><alternateRegister>GRXSTSP_Device</alternateRegister><addressOffset>32</addressOffset><size>32</size><access>read-only</access><resetValue>0</resetValue><fields><field><name>PKTSTS</name><description>Packet status</description><bitOffset>17</bitOffset><bitWidth>4</bitWidth></field>
-                    <field><name>DPID</name><description>Data PID</description><bitOffset>15</bitOffset><bitWidth>2</bitWidth></field>
-                    <field><name>BCNT</name><description>Byte count</description><bitOffset>4</bitOffset><bitWidth>11</bitWidth></field>
-                    <field><name>CHNUM</name><description>Channel number</description><bitOffset>0</bitOffset><bitWidth>4</bitWidth></field>
-                </fields></register>
                 <register><name>GLPMCFG</name><addressOffset>84</addressOffset></register>
             </registers>
         </peripheral>
