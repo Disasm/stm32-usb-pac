@@ -2635,9 +2635,11 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>6</dim><dimIncrement>0x20</dimIncrement><dimIndex>0,1,2,3,4,5</dimIndex><name>DIEPINT%s</name>
+                    <dim>9</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <name>DIEPINT%s</name>
                     <displayName>DIEPINT0</displayName>
-                    <description>OTG device endpoint-0 interrupt
+                    <description>OTG device IN endpoint x interrupt
                         register</description>
                     <addressOffset>0x108</addressOffset>
                     <size>32</size>
@@ -2841,9 +2843,11 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>6</dim><dimIncrement>0x20</dimIncrement><dimIndex>0,1,2,3,4,5</dimIndex><name>DTXFSTS%s</name>
+                    <dim>9</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <name>DTXFSTS%s</name>
                     <displayName>DTXFSTS0</displayName>
-                    <description>OTG_HS device IN endpoint transmit FIFO
+                    <description>OTG device IN endpoint transmit FIFO
                         status register</description>
                     <addressOffset>0x118</addressOffset>
                     <size>32</size>
@@ -2853,7 +2857,7 @@
                         <field>
                             <name>INEPTFSAV</name>
                             <description>IN endpoint TxFIFO space
-                                avail</description>
+                                available</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -3157,9 +3161,12 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DOEPTSIZ%s</name>
+                    <dim>8</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>1,2,3,4,5,6,7,8</dimIndex>
+                    <name>DOEPTSIZ%s</name>
                     <displayName>DOEPTSIZ1</displayName>
-                    <description>OTG_HS device endpoint-2 transfer size
+                    <description>OTG device OUT endpoint x transfer size
                         register</description>
                     <addressOffset>0x330</addressOffset>
                     <size>32</size>

@@ -2123,6 +2123,136 @@
                     </fields>
                 </register>
                 <register>
+                    <dim>6</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <name>DIEPINT%s</name>
+                    <displayName>DIEPINT0</displayName>
+                    <description>OTG device IN endpoint x interrupt
+                        register</description>
+                    <addressOffset>0x108</addressOffset>
+                    <size>32</size>
+                    <resetValue>0x00000080</resetValue>
+                    <fields>
+                        <field>
+                            <name>TXFE</name>
+                            <description>TXFE</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>INEPNE</name>
+                            <description>INEPNE</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>ITTXFE</name>
+                            <description>ITTXFE</description>
+                            <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>TOC</name>
+                            <description>TOC</description>
+                            <bitOffset>3</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>EPDISD</name>
+                            <description>EPDISD</description>
+                            <bitOffset>1</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>XFRC</name>
+                            <description>XFRC</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <name>DIEPTSIZ0</name>
+                    <displayName>DIEPTSIZ0</displayName>
+                    <description>device endpoint-0 transfer size
+                        register</description>
+                    <addressOffset>0x110</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <fields>
+                        <field>
+                            <name>XFRSIZ</name>
+                            <description>Transfer size</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>7</bitWidth>
+                        </field>
+                        <field>
+                            <name>PKTCNT</name>
+                            <description>Packet count</description>
+                            <bitOffset>19</bitOffset>
+                            <bitWidth>2</bitWidth>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPTSIZ%s</name>
+                    <displayName>DIEPTSIZ1</displayName>
+                    <description>device endpoint-1 transfer size
+                        register</description>
+                    <addressOffset>0x130</addressOffset>
+                    <size>32</size>
+                    <access>read-write</access>
+                    <resetValue>0x00000000</resetValue>
+                    <fields>
+                        <field>
+                            <name>XFRSIZ</name>
+                            <description>Transfer size</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>19</bitWidth>
+                        </field>
+                        <field>
+                            <name>PKTCNT</name>
+                            <description>Packet count</description>
+                            <bitOffset>19</bitOffset>
+                            <bitWidth>10</bitWidth>
+                        </field>
+                        <field>
+                            <name>MCNT</name>
+                            <description>Multi count</description>
+                            <bitOffset>29</bitOffset>
+                            <bitWidth>2</bitWidth>
+                        </field>
+                    </fields>
+                </register>
+                <register>
+                    <dim>6</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <name>DTXFSTS%s</name>
+                    <displayName>DTXFSTS0</displayName>
+                    <description>OTG device IN endpoint transmit FIFO
+                        status register</description>
+                    <addressOffset>0x118</addressOffset>
+                    <size>32</size>
+                    <access>read-only</access>
+                    <resetValue>0x00000000</resetValue>
+                    <fields>
+                        <field>
+                            <name>INEPTFSAV</name>
+                            <description>IN endpoint TxFIFO space
+                                available</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>16</bitWidth>
+                        </field>
+                    </fields>
+                </register>
+                <register>
                     <name>DOEPCTL0</name>
                     <displayName>DOEPCTL0</displayName>
                     <description>device endpoint-0 control
@@ -2204,7 +2334,10 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DOEPCTL%s</name>
+                    <dim>5</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <name>DOEPCTL%s</name>
                     <displayName>DOEPCTL1</displayName>
                     <description>device endpoint-1 control
                         register</description>
@@ -2308,112 +2441,6 @@
                     </fields>
                 </register>
                 <register>
-                    <name>DIEPINT0</name>
-                    <displayName>DIEPINT0</displayName>
-                    <description>device endpoint-x interrupt
-                        register</description>
-                    <addressOffset>0x108</addressOffset>
-                    <size>32</size>
-                    <resetValue>0x00000080</resetValue>
-                    <fields>
-                        <field>
-                            <name>TXFE</name>
-                            <description>TXFE</description>
-                            <bitOffset>7</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                        <field>
-                            <name>INEPNE</name>
-                            <description>INEPNE</description>
-                            <bitOffset>6</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>ITTXFE</name>
-                            <description>ITTXFE</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>TOC</name>
-                            <description>TOC</description>
-                            <bitOffset>3</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>EPDISD</name>
-                            <description>EPDISD</description>
-                            <bitOffset>1</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>XFRC</name>
-                            <description>XFRC</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPINT%s</name>
-                    <displayName>DIEPINT1</displayName>
-                    <description>device endpoint-1 interrupt
-                        register</description>
-                    <addressOffset>0x128</addressOffset>
-                    <size>32</size>
-                    <resetValue>0x00000080</resetValue>
-                    <fields>
-                        <field>
-                            <name>TXFE</name>
-                            <description>TXFE</description>
-                            <bitOffset>7</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                        <field>
-                            <name>INEPNE</name>
-                            <description>INEPNE</description>
-                            <bitOffset>6</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>ITTXFE</name>
-                            <description>ITTXFE</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>TOC</name>
-                            <description>TOC</description>
-                            <bitOffset>3</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>EPDISD</name>
-                            <description>EPDISD</description>
-                            <bitOffset>1</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>XFRC</name>
-                            <description>XFRC</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
                     <name>DOEPINT0</name>
                     <displayName>DOEPINT0</displayName>
                     <description>device endpoint-0 interrupt
@@ -2501,30 +2528,7 @@
                         </field>
                     </fields>
                 </register>
-                <register>
-                    <name>DIEPTSIZ0</name>
-                    <displayName>DIEPTSIZ0</displayName>
-                    <description>device endpoint-0 transfer size
-                        register</description>
-                    <addressOffset>0x110</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>XFRSIZ</name>
-                            <description>Transfer size</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>7</bitWidth>
-                        </field>
-                        <field>
-                            <name>PKTCNT</name>
-                            <description>Packet count</description>
-                            <bitOffset>19</bitOffset>
-                            <bitWidth>2</bitWidth>
-                        </field>
-                    </fields>
-                </register>
+
                 <register>
                     <name>DOEPTSIZ0</name>
                     <displayName>DOEPTSIZ0</displayName>
@@ -2556,77 +2560,12 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPTSIZ%s</name>
-                    <displayName>DIEPTSIZ1</displayName>
-                    <description>device endpoint-1 transfer size
-                        register</description>
-                    <addressOffset>0x130</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>XFRSIZ</name>
-                            <description>Transfer size</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>19</bitWidth>
-                        </field>
-                        <field>
-                            <name>PKTCNT</name>
-                            <description>Packet count</description>
-                            <bitOffset>19</bitOffset>
-                            <bitWidth>10</bitWidth>
-                        </field>
-                        <field>
-                            <name>MCNT</name>
-                            <description>Multi count</description>
-                            <bitOffset>29</bitOffset>
-                            <bitWidth>2</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DTXFSTS0</name>
-                    <displayName>DTXFSTS0</displayName>
-                    <description>OTG_FS device IN endpoint transmit FIFO
-                        status register</description>
-                    <addressOffset>0x118</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>INEPTFSAV</name>
-                            <description>IN endpoint TxFIFO space
-                                available</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DTXFSTS%s</name>
-                    <displayName>DTXFSTS1</displayName>
-                    <description>OTG_FS device IN endpoint transmit FIFO
-                        status register</description>
-                    <addressOffset>0x138</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>INEPTFSAV</name>
-                            <description>IN endpoint TxFIFO space
-                                available</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DOEPTSIZ%s</name>
+                    <dim>5</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <name>DOEPTSIZ%s</name>
                     <displayName>DOEPTSIZ1</displayName>
-                    <description>device OUT endpoint-1 transfer size
+                    <description>OTG device OUT endpoint x transfer size
                         register</description>
                     <addressOffset>0x330</addressOffset>
                     <size>32</size>
