@@ -981,12 +981,11 @@
                 <register>
                     <name>GRXFSIZ</name>
                     <displayName>GRXFSIZ</displayName>
-                    <description>OTG_HS Receive FIFO size
-                        register</description>
+                    <description>OTG Receive FIFO size register</description>
                     <addressOffset>0x24</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x00000200</resetValue>
+                    <resetValue>0x00000400</resetValue>
                     <fields>
                         <field>
                             <name>RXFD</name>
@@ -997,40 +996,40 @@
                     </fields>
                 </register>
                 <register>
-                    <name>GNPTXFSIZ</name>
-                    <displayName>GNPTXFSIZ</displayName>
-                    <description>OTG_HS nonperiodic transmit FIFO size
-                        register (host mode)</description>
+                    <name>HNPTXFSIZ</name>
+                    <displayName>HNPTXFSIZ</displayName>
+                    <description>OTG non-periodic transmit FIFO size
+                        register (Host mode)</description>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x00000200</resetValue>
+                    <resetValue>0x02000200</resetValue>
                     <fields>
                         <field>
                             <name>NPTXFSA</name>
-                            <description>Nonperiodic transmit RAM start
+                            <description>Non-periodic transmit RAM start
                                 address</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
                         <field>
                             <name>NPTXFD</name>
-                            <description>Nonperiodic TxFIFO depth</description>
+                            <description>Non-periodic TxFIFO depth</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
                     </fields>
                 </register>
                 <register>
-                    <name>TX0FSIZ</name>
-                    <displayName>TX0FSIZ</displayName>
-                    <description>Endpoint 0 transmit FIFO size (peripheral
+                    <name>DIEPTXF0</name>
+                    <displayName>DIEPTXF0</displayName>
+                    <description>Endpoint 0 transmit FIFO size (Device
                         mode)</description>
-                    <alternateRegister>GNPTXFSIZ</alternateRegister>
+                    <alternateRegister>HNPTXFSIZ</alternateRegister>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x00000200</resetValue>
+                    <resetValue>0x02000200</resetValue>
                     <fields>
                         <field>
                             <name>TX0FSA</name>
@@ -1041,7 +1040,7 @@
                         </field>
                         <field>
                             <name>TX0FD</name>
-                            <description>Endpoint 0 TxFIFO depth</description>
+                            <description>Endpoint 0 Tx FIFO depth</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -1050,7 +1049,7 @@
                 <register>
                     <name>GNPTXSTS</name>
                     <displayName>GNPTXSTS</displayName>
-                    <description>OTG_HS nonperiodic transmit FIFO/queue
+                    <description>OTG non-periodic transmit FIFO/queue
                         status register</description>
                     <addressOffset>0x2C</addressOffset>
                     <size>32</size>
@@ -1059,21 +1058,21 @@
                     <fields>
                         <field>
                             <name>NPTXFSAV</name>
-                            <description>Nonperiodic TxFIFO space
+                            <description>Non-periodic Tx FIFO space
                                 available</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
                         <field>
                             <name>NPTQXSAV</name>
-                            <description>Nonperiodic transmit request queue space
-                                available</description>
+                            <description>Non-periodic transmit request queue
+                                space available</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>8</bitWidth>
                         </field>
                         <field>
                             <name>NPTXQTOP</name>
-                            <description>Top of the nonperiodic transmit request
+                            <description>Top of the non-periodic transmit request
                                 queue</description>
                             <bitOffset>24</bitOffset>
                             <bitWidth>7</bitWidth>
@@ -1083,8 +1082,7 @@
                 <register>
                     <name>GCCFG</name>
                     <displayName>GCCFG</displayName>
-                    <description>OTG_HS general core configuration
-                        register</description>
+                    <description>OTG general core configuration register</description>
                     <addressOffset>0x38</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1157,27 +1155,30 @@
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x02000600</resetValue>
+                    <resetValue>0x02000400</resetValue>
                     <fields>
                         <field>
                             <name>PTXSA</name>
-                            <description>Host periodic TxFIFO start
+                            <description>Host periodic Tx FIFO start
                                 address</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
                         <field>
                             <name>PTXFD</name>
-                            <description>Host periodic TxFIFO depth</description>
+                            <description>Host periodic Tx FIFO depth</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x4</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPTXF%s</name>
+                    <dim>5</dim>
+                    <dimIncrement>0x4</dimIncrement>
+                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <name>DIEPTXF%s</name>
                     <displayName>DIEPTXF1</displayName>
-                    <description>OTG_HS device IN endpoint transmit FIFO size
+                    <description>OTG device IN endpoint transmit FIFO size
                         register</description>
                     <addressOffset>0x104</addressOffset>
                     <size>32</size>
@@ -1193,7 +1194,7 @@
                         </field>
                         <field>
                             <name>INEPTXFD</name>
-                            <description>IN endpoint TxFIFO depth</description>
+                            <description>IN endpoint Tx FIFO depth</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
