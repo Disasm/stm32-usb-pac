@@ -1671,28 +1671,28 @@
                             <description>Set global IN NAK</description>
                             <bitOffset>7</bitOffset>
                             <bitWidth>1</bitWidth>
-                            <access>read-write</access>
+                            <access>write-only</access>
                         </field>
                         <field>
                             <name>CGINAK</name>
                             <description>Clear global IN NAK</description>
                             <bitOffset>8</bitOffset>
                             <bitWidth>1</bitWidth>
-                            <access>read-write</access>
+                            <access>write-only</access>
                         </field>
                         <field>
                             <name>SGONAK</name>
                             <description>Set global OUT NAK</description>
                             <bitOffset>9</bitOffset>
                             <bitWidth>1</bitWidth>
-                            <access>read-write</access>
+                            <access>write-only</access>
                         </field>
                         <field>
                             <name>CGONAK</name>
                             <description>Clear global OUT NAK</description>
                             <bitOffset>10</bitOffset>
                             <bitWidth>1</bitWidth>
-                            <access>read-write</access>
+                            <access>write-only</access>
                         </field>
                         <field>
                             <name>POPRGDNE</name>
