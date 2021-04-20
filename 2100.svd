@@ -3196,18 +3196,17 @@
             <baseAddress>0x40040E00</baseAddress>
             <addressBlock>
                 <offset>0x0</offset>
-                <size>0x3F200</size>
+                <size>0x400</size>
                 <usage>registers</usage>
             </addressBlock>
             <registers>
                 <register>
                     <name>PCGCCTL</name>
                     <displayName>PCGCCTL</displayName>
-                    <description>Power and clock gating control
+                    <description>OTG power and clock gating control
                         register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
-                    <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -3215,18 +3214,42 @@
                             <description>Stop PHY clock</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
+                            <access>read-write</access>
                         </field>
                         <field>
                             <name>GATEHCLK</name>
                             <description>Gate HCLK</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
+                            <access>read-write</access>
                         </field>
                         <field>
                             <name>PHYSUSP</name>
                             <description>PHY suspended</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>ENL1GTG</name>
+                            <description>Enable sleep clock gating</description>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>PHYSLEEP</name>
+                            <description>PHY in Sleep</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>SUSP</name>
+                            <description>Deep Sleep</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
                         </field>
                     </fields>
                 </register>
