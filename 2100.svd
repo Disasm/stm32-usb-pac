@@ -2753,83 +2753,13 @@
                     </fields>
                 </register>
                 <register>
-                    <name>DIEPDMA1</name>
-                    <displayName>DIEPDMA1</displayName>
-                    <description>OTG_HS device endpoint-1 DMA address
+                    <dim>9</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <name>DIEPDMA%s</name>
+                    <displayName>DIEPDMA0</displayName>
+                    <description>OTG device IN endpoint x DMA address
                         register</description>
                     <addressOffset>0x114</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DMAADDR</name>
-                            <description>DMA address</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>32</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DIEPDMA2</name>
-                    <displayName>DIEPDMA2</displayName>
-                    <description>OTG_HS device endpoint-2 DMA address
-                        register</description>
-                    <addressOffset>0x134</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DMAADDR</name>
-                            <description>DMA address</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>32</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DIEPDMA3</name>
-                    <displayName>DIEPDMA3</displayName>
-                    <description>OTG_HS device endpoint-3 DMA address
-                        register</description>
-                    <addressOffset>0x154</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DMAADDR</name>
-                            <description>DMA address</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>32</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DIEPDMA4</name>
-                    <displayName>DIEPDMA4</displayName>
-                    <description>OTG_HS device endpoint-4 DMA address
-                        register</description>
-                    <addressOffset>0x174</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DMAADDR</name>
-                            <description>DMA address</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>32</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DIEPDMA5</name>
-                    <displayName>DIEPDMA5</displayName>
-                    <description>OTG_HS device endpoint-5 DMA address
-                        register</description>
-                    <addressOffset>0x194</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
