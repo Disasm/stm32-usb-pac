@@ -1148,6 +1148,15 @@
                     </fields>
                 </register>
                 <register>
+                    <name>GLPMCFG</name>
+                    <displayName>GLPMCFG</displayName>
+                    <description>OTG core LPM configuration register</description>
+                    <addressOffset>0x54</addressOffset>
+                    <size>32</size>
+                    <resetValue>0x00000000</resetValue>
+                    <!-- TODO -->
+                </register>
+                <register>
                     <name>HPTXFSIZ</name>
                     <displayName>HPTXFSIZ</displayName>
                     <description>OTG Host periodic transmit FIFO size
