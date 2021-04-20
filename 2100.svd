@@ -1225,8 +1225,7 @@
                 <register>
                     <name>HCFG</name>
                     <displayName>HCFG</displayName>
-                    <description>OTG_HS host configuration
-                        register</description>
+                    <description>OTG host configuration register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -1250,8 +1249,7 @@
                 <register>
                     <name>HFIR</name>
                     <displayName>HFIR</displayName>
-                    <description>OTG_HS Host frame interval
-                        register</description>
+                    <description>OTG Host frame interval register</description>
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1268,7 +1266,7 @@
                 <register>
                     <name>HFNUM</name>
                     <displayName>HFNUM</displayName>
-                    <description>OTG_HS host frame number/frame time
+                    <description>OTG host frame number/frame time
                         remaining register</description>
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
@@ -1292,7 +1290,7 @@
                 <register>
                     <name>HPTXSTS</name>
                     <displayName>HPTXSTS</displayName>
-                    <description>OTG_HS_Host periodic transmit FIFO/queue
+                    <description>OTG host periodic transmit FIFO/queue
                         status register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
@@ -1327,7 +1325,7 @@
                 <register>
                     <name>HAINT</name>
                     <displayName>HAINT</displayName>
-                    <description>OTG_HS Host all channels interrupt
+                    <description>OTG host all channels interrupt
                         register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
@@ -1345,7 +1343,7 @@
                 <register>
                     <name>HAINTMSK</name>
                     <displayName>HAINTMSK</displayName>
-                    <description>OTG_HS host all channels interrupt mask
+                    <description>OTG host all channels interrupt mask
                         register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
@@ -1363,7 +1361,7 @@
                 <register>
                     <name>HPRT</name>
                     <displayName>HPRT</displayName>
-                    <description>OTG_HS host port control and status
+                    <description>OTG host port control and status
                         register</description>
                     <addressOffset>0x40</addressOffset>
                     <size>32</size>
@@ -1465,7 +1463,7 @@
                 <register>
                     <name>HCCHAR0</name>
                     <displayName>HCCHAR0</displayName>
-                    <description>OTG_HS host channel-0 characteristics
+                    <description>OTG host channel 0 characteristics
                         register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>

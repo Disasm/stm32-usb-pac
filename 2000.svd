@@ -1105,8 +1105,7 @@
                 <register>
                     <name>HCFG</name>
                     <displayName>HCFG</displayName>
-                    <description>OTG_FS host configuration register
-                        (OTG_FS_HCFG)</description>
+                    <description>OTG host configuration register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -1130,8 +1129,7 @@
                 <register>
                     <name>HFIR</name>
                     <displayName>HFIR</displayName>
-                    <description>OTG_FS Host frame interval
-                        register</description>
+                    <description>OTG Host frame interval register</description>
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1148,8 +1146,8 @@
                 <register>
                     <name>HFNUM</name>
                     <displayName>HFNUM</displayName>
-                    <description>OTG_FS host frame number/frame time
-                        remaining register (OTG_FS_HFNUM)</description>
+                    <description>OTG host frame number/frame time
+                        remaining register</description>
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1172,8 +1170,8 @@
                 <register>
                     <name>HPTXSTS</name>
                     <displayName>HPTXSTS</displayName>
-                    <description>OTG_FS_Host periodic transmit FIFO/queue
-                        status register (OTG_FS_HPTXSTS)</description>
+                    <description>OTG host periodic transmit FIFO/queue
+                        status register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
                     <resetValue>0x00080100</resetValue>
@@ -1207,7 +1205,7 @@
                 <register>
                     <name>HAINT</name>
                     <displayName>HAINT</displayName>
-                    <description>OTG_FS Host all channels interrupt
+                    <description>OTG host all channels interrupt
                         register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
@@ -1225,7 +1223,7 @@
                 <register>
                     <name>HAINTMSK</name>
                     <displayName>HAINTMSK</displayName>
-                    <description>OTG_FS host all channels interrupt mask
+                    <description>OTG host all channels interrupt mask
                         register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
@@ -1243,8 +1241,8 @@
                 <register>
                     <name>HPRT</name>
                     <displayName>HPRT</displayName>
-                    <description>OTG_FS host port control and status register
-                        (OTG_FS_HPRT)</description>
+                    <description>OTG host port control and status
+                        register</description>
                     <addressOffset>0x40</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -1345,8 +1343,8 @@
                 <register>
                     <name>HCCHAR0</name>
                     <displayName>HCCHAR0</displayName>
-                    <description>OTG_FS host channel-0 characteristics
-                        register (OTG_FS_HCCHAR0)</description>
+                    <description>OTG host channel 0 characteristics
+                        register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
