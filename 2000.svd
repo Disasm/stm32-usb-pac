@@ -2134,46 +2134,49 @@
                     <resetValue>0x00000080</resetValue>
                     <fields>
                         <field>
-                            <name>TXFE</name>
-                            <description>TXFE</description>
-                            <bitOffset>7</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                        <field>
-                            <name>INEPNE</name>
-                            <description>INEPNE</description>
-                            <bitOffset>6</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>ITTXFE</name>
-                            <description>ITTXFE</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>TOC</name>
-                            <description>TOC</description>
-                            <bitOffset>3</bitOffset>
+                            <name>XFRC</name>
+                            <description>Transfer completed
+                                interrupt</description>
+                            <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EPDISD</name>
-                            <description>EPDISD</description>
+                            <description>Endpoint disabled
+                                interrupt</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
-                            <name>XFRC</name>
-                            <description>XFRC</description>
-                            <bitOffset>0</bitOffset>
+                            <name>TOC</name>
+                            <description>Timeout condition</description>
+                            <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>ITTXFE</name>
+                            <description>IN token received when TxFIFO is
+                                empty</description>
+                            <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>INEPNE</name>
+                            <description>IN endpoint NAK effective</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>TXFE</name>
+                            <description>Transmit FIFO empty</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
                         </field>
                     </fields>
                 </register>
