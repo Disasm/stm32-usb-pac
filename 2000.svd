@@ -31,8 +31,7 @@
                 <register>
                     <name>GOTGCTL</name>
                     <displayName>GOTGCTL</displayName>
-                    <description>OTG_FS control and status register
-                        (OTG_FS_GOTGCTL)</description>
+                    <description>OTG control and status register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000800</resetValue>
@@ -112,8 +111,7 @@
                 <register>
                     <name>GOTGINT</name>
                     <displayName>GOTGINT</displayName>
-                    <description>OTG_FS interrupt register
-                        (OTG_FS_GOTGINT)</description>
+                    <description>OTG interrupt register</description>
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -162,8 +160,7 @@
                 <register>
                     <name>GAHBCFG</name>
                     <displayName>GAHBCFG</displayName>
-                    <description>OTG_FS AHB configuration register
-                        (OTG_FS_GAHBCFG)</description>
+                    <description>OTG AHB configuration register</description>
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -193,8 +190,7 @@
                 <register>
                     <name>GUSBCFG</name>
                     <displayName>GUSBCFG</displayName>
-                    <description>OTG_FS USB configuration register
-                        (OTG_FS_GUSBCFG)</description>
+                    <description>OTG USB configuration register</description>
                     <addressOffset>0xC</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000A00</resetValue>
@@ -261,8 +257,7 @@
                 <register>
                     <name>GRSTCTL</name>
                     <displayName>GRSTCTL</displayName>
-                    <description>OTG_FS reset register
-                        (OTG_FS_GRSTCTL)</description>
+                    <description>OTG reset register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
                     <resetValue>0x20000000</resetValue>
@@ -321,8 +316,7 @@
                 <register>
                     <name>GINTSTS</name>
                     <displayName>GINTSTS</displayName>
-                    <description>OTG_FS core interrupt register
-                        (OTG_FS_GINTSTS)</description>
+                    <description>OTG core interrupt register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
                     <resetValue>0x04000020</resetValue>
@@ -357,22 +351,21 @@
                         </field>
                         <field>
                             <name>RXFLVL</name>
-                            <description>RxFIFO non-empty</description>
+                            <description>Rx FIFO non-empty</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
                         <field>
                             <name>NPTXFE</name>
-                            <description>Non-periodic TxFIFO empty</description>
+                            <description>Non-periodic Tx FIFO empty</description>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
                         <field>
                             <name>GINAKEFF</name>
-                            <description>Global IN non-periodic NAK
-                                effective</description>
+                            <description>Global IN non-periodic NAK effective</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
@@ -452,8 +445,8 @@
                         </field>
                         <field>
                             <name>IPXFR_INCOMPISOOUT</name>
-                            <description>Incomplete periodic transfer(Host
-                                mode)/Incomplete isochronous OUT transfer(Device
+                            <description>Incomplete periodic transfer (Host
+                                mode)/Incomplete isochronous OUT transfer (Device
                                 mode)</description>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
@@ -505,8 +498,7 @@
                         </field>
                         <field>
                             <name>WKUPINT</name>
-                            <description>Resume/remote wakeup detected
-                                interrupt</description>
+                            <description>Resume/remote wakeup detected interrupt</description>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -516,8 +508,7 @@
                 <register>
                     <name>GINTMSK</name>
                     <displayName>GINTMSK</displayName>
-                    <description>OTG_FS interrupt mask register
-                        (OTG_FS_GINTMSK)</description>
+                    <description>OTG interrupt mask register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -546,16 +537,14 @@
                         </field>
                         <field>
                             <name>RXFLVLM</name>
-                            <description>Receive FIFO non-empty
-                                mask</description>
+                            <description>Receive FIFO non-empty mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>NPTXFEM</name>
-                            <description>Non-periodic TxFIFO empty
-                                mask</description>
+                            <description>Non-periodic Tx FIFO empty mask</description>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -654,8 +643,8 @@
                         </field>
                         <field>
                             <name>IPXFRM_IISOOXFRM</name>
-                            <description>Incomplete periodic transfer mask(Host
-                                mode)/Incomplete isochronous OUT transfer mask(Device
+                            <description>Incomplete periodic transfer mask (Host
+                                mode)/Incomplete isochronous OUT transfer mask (Device
                                 mode)</description>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
@@ -945,7 +934,7 @@
                 <register>
                     <name>OTG_CID</name>
                     <displayName>CID</displayName>
-                    <description>core ID register</description>
+                    <description>OTG core ID register</description>
                     <addressOffset>0x3C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -962,8 +951,8 @@
                 <register>
                     <name>HPTXFSIZ</name>
                     <displayName>HPTXFSIZ</displayName>
-                    <description>OTG_FS Host periodic transmit FIFO size
-                        register (OTG_FS_HPTXFSIZ)</description>
+                    <description>OTG Host periodic transmit FIFO size
+                        register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
