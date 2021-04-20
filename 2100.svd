@@ -14,7 +14,7 @@
     <addressUnitBits>8</addressUnitBits>
     <width>32</width>
     <size>32</size>
-    <resetValue>0x0</resetValue>
+    <resetValue>0x00000000</resetValue>
     <resetMask>0xFFFFFFFF</resetMask>
     <peripherals>
         <peripheral>
@@ -115,7 +115,7 @@
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>SEDET</name>
@@ -164,7 +164,7 @@
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>GINT</name>
@@ -610,7 +610,7 @@
                     <description>OTG interrupt mask register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MMISM</name>
@@ -819,7 +819,7 @@
                     <addressOffset>0x1C</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>CHNUM</name>
@@ -855,7 +855,7 @@
                     <addressOffset>0x20</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>CHNUM</name>
@@ -993,7 +993,7 @@
                     <addressOffset>0x38</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PWRDWN</name>
@@ -1156,7 +1156,7 @@
                     <addressOffset>0x20</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>EPNUM</name>
@@ -1210,7 +1210,7 @@
                         register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>FSLSPCS</name>
@@ -1313,7 +1313,7 @@
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>HAINT</name>
@@ -1331,7 +1331,7 @@
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>HAINTM</name>
@@ -1348,7 +1348,7 @@
                         register</description>
                     <addressOffset>0x40</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PCSTS</name>
@@ -1451,7 +1451,7 @@
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1524,7 +1524,7 @@
                     <addressOffset>0x120</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1597,7 +1597,7 @@
                     <addressOffset>0x140</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1670,7 +1670,7 @@
                     <addressOffset>0x160</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1743,7 +1743,7 @@
                     <addressOffset>0x180</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1816,7 +1816,7 @@
                     <addressOffset>0x1A0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1889,7 +1889,7 @@
                     <addressOffset>0x1C0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -1962,7 +1962,7 @@
                     <addressOffset>0x1E0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -2035,7 +2035,7 @@
                     <addressOffset>0x200</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -2108,7 +2108,7 @@
                     <addressOffset>0x220</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -2181,7 +2181,7 @@
                     <addressOffset>0x240</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -2254,7 +2254,7 @@
                     <addressOffset>0x260</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -2327,7 +2327,7 @@
                     <addressOffset>0x104</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2369,7 +2369,7 @@
                     <addressOffset>0x124</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2411,7 +2411,7 @@
                     <addressOffset>0x144</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2453,7 +2453,7 @@
                     <addressOffset>0x164</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2495,7 +2495,7 @@
                     <addressOffset>0x184</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2537,7 +2537,7 @@
                     <addressOffset>0x1A4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2579,7 +2579,7 @@
                     <addressOffset>0x1C4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2621,7 +2621,7 @@
                     <addressOffset>0x1E4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2663,7 +2663,7 @@
                     <addressOffset>0x204</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2705,7 +2705,7 @@
                     <addressOffset>0x224</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2747,7 +2747,7 @@
                     <addressOffset>0x244</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2789,7 +2789,7 @@
                     <addressOffset>0x264</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>PRTADDR</name>
@@ -2831,7 +2831,7 @@
                     <addressOffset>0x108</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -2913,7 +2913,7 @@
                     <addressOffset>0x128</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -2995,7 +2995,7 @@
                     <addressOffset>0x148</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3077,7 +3077,7 @@
                     <addressOffset>0x168</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3159,7 +3159,7 @@
                     <addressOffset>0x188</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3241,7 +3241,7 @@
                     <addressOffset>0x1A8</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3323,7 +3323,7 @@
                     <addressOffset>0x1C8</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3405,7 +3405,7 @@
                     <addressOffset>0x1E8</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3487,7 +3487,7 @@
                     <addressOffset>0x208</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3569,7 +3569,7 @@
                     <addressOffset>0x228</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3651,7 +3651,7 @@
                     <addressOffset>0x248</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3733,7 +3733,7 @@
                     <addressOffset>0x268</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
@@ -3815,7 +3815,7 @@
                     <addressOffset>0x10C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -3897,7 +3897,7 @@
                     <addressOffset>0x12C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -3979,7 +3979,7 @@
                     <addressOffset>0x14C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4061,7 +4061,7 @@
                     <addressOffset>0x16C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4143,7 +4143,7 @@
                     <addressOffset>0x18C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4225,7 +4225,7 @@
                     <addressOffset>0x1AC</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4307,7 +4307,7 @@
                     <addressOffset>0x1CC</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4389,7 +4389,7 @@
                     <addressOffset>0x1EC</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4471,7 +4471,7 @@
                     <addressOffset>0x20C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4553,7 +4553,7 @@
                     <addressOffset>0x22C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4635,7 +4635,7 @@
                     <addressOffset>0x24C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4717,7 +4717,7 @@
                     <addressOffset>0x26C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -4799,7 +4799,7 @@
                     <addressOffset>0x110</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -4829,7 +4829,7 @@
                     <addressOffset>0x130</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -4859,7 +4859,7 @@
                     <addressOffset>0x150</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -4889,7 +4889,7 @@
                     <addressOffset>0x170</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -4919,7 +4919,7 @@
                     <addressOffset>0x190</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -4949,7 +4949,7 @@
                     <addressOffset>0x1B0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -4979,7 +4979,7 @@
                     <addressOffset>0x1D0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -5009,7 +5009,7 @@
                     <addressOffset>0x1F0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -5039,7 +5039,7 @@
                     <addressOffset>0x210</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -5069,7 +5069,7 @@
                     <addressOffset>0x230</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -5099,7 +5099,7 @@
                     <addressOffset>0x250</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -5129,7 +5129,7 @@
                     <addressOffset>0x270</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -5159,7 +5159,7 @@
                     <addressOffset>0x114</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5177,7 +5177,7 @@
                     <addressOffset>0x134</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5195,7 +5195,7 @@
                     <addressOffset>0x154</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5213,7 +5213,7 @@
                     <addressOffset>0x174</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5231,7 +5231,7 @@
                     <addressOffset>0x194</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5249,7 +5249,7 @@
                     <addressOffset>0x1B4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5267,7 +5267,7 @@
                     <addressOffset>0x1D4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5285,7 +5285,7 @@
                     <addressOffset>0x1F4</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5303,7 +5303,7 @@
                     <addressOffset>0x214</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5321,7 +5321,7 @@
                     <addressOffset>0x234</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5339,7 +5339,7 @@
                     <addressOffset>0x254</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5357,7 +5357,7 @@
                     <addressOffset>0x274</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -5431,7 +5431,7 @@
                     <description>OTG_HS device control register</description>
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>RWUSIG</name>
@@ -5549,7 +5549,7 @@
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -5615,7 +5615,7 @@
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -5673,7 +5673,7 @@
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>IEPINT</name>
@@ -5698,7 +5698,7 @@
                     <addressOffset>0x1C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>IEPM</name>
@@ -5758,7 +5758,7 @@
                     <addressOffset>0x30</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>NONISOTHREN</name>
@@ -5808,7 +5808,7 @@
                     <addressOffset>0x34</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>INEPTXFEM</name>
@@ -5827,7 +5827,7 @@
                     <addressOffset>0x38</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>IEP1INT</name>
@@ -5852,7 +5852,7 @@
                     <addressOffset>0x3C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>IEP1INTM</name>
@@ -5878,7 +5878,7 @@
                     <addressOffset>0x40</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -5950,7 +5950,7 @@
                     <addressOffset>0x80</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
@@ -6033,7 +6033,7 @@
                         register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -6135,7 +6135,7 @@
                         register</description>
                     <addressOffset>0x120</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -6330,7 +6330,7 @@
                     <addressOffset>0x110</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -6354,7 +6354,7 @@
                     <addressOffset>0x114</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -6372,7 +6372,7 @@
                     <addressOffset>0x134</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -6390,7 +6390,7 @@
                     <addressOffset>0x154</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -6408,7 +6408,7 @@
                     <addressOffset>0x174</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -6426,7 +6426,7 @@
                     <addressOffset>0x194</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>DMAADDR</name>
@@ -6444,7 +6444,7 @@
                     <addressOffset>0x118</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>INEPTFSAV</name>
@@ -6463,7 +6463,7 @@
                     <addressOffset>0x130</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -6573,7 +6573,7 @@
                         register</description>
                     <addressOffset>0x320</addressOffset>
                     <size>32</size>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>MPSIZ</name>
@@ -6730,7 +6730,7 @@
                     <addressOffset>0x310</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -6760,7 +6760,7 @@
                     <addressOffset>0x330</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRSIZ</name>
@@ -6804,7 +6804,7 @@
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x0</resetValue>
+                    <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>STPPCLK</name>

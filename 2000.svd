@@ -14,7 +14,7 @@
     <addressUnitBits>8</addressUnitBits>
     <width>32</width>
     <size>32</size>
-    <resetValue>0x0</resetValue>
+    <resetValue>0x00000000</resetValue>
     <resetMask>0xFFFFFFFF</resetMask>
     <peripherals>
         <peripheral>
