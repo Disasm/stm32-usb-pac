@@ -1095,36 +1095,8 @@
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>I2CPADEN</name>
-                            <description>Enable I2C bus connection for the
-                                external I2C PHY interface</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>VBUSASEN</name>
-                            <description>Enable the VBUS sensing
-                                device</description>
-                            <bitOffset>18</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>VBUSBSEN</name>
-                            <description>Enable the VBUS sensing
-                                device</description>
-                            <bitOffset>19</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>SOFOUTEN</name>
-                            <description>SOF output enable</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>NOVBUSSENS</name>
-                            <description>VBUS sensing disable
-                                option</description>
+                            <name>VBDEN</name>
+                            <description>USB VBUS detection enable</description>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
