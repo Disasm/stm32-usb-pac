@@ -2006,7 +2006,7 @@
                             <description>Endpoint disable</description>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
-                            <access>read-only</access>
+                            <access>read-write</access>
                         </field>
                         <field>
                             <name>EPENA</name>
@@ -2100,8 +2100,8 @@
                             <access>write-only</access>
                         </field>
                         <field>
-                            <name>SODDFRM_SD1PID</name>
-                            <description>SODDFRM/SD1PID</description>
+                            <name>SODDFRM</name>
+                            <description>Set odd frame</description>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
@@ -2183,7 +2183,7 @@
                 <register>
                     <name>DIEPTSIZ0</name>
                     <displayName>DIEPTSIZ0</displayName>
-                    <description>device endpoint-0 transfer size
+                    <description>OTG device IN endpoint 0 transfer size
                         register</description>
                     <addressOffset>0x110</addressOffset>
                     <size>32</size>
@@ -2205,9 +2205,12 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPTSIZ%s</name>
+                    <dim>5</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <name>DIEPTSIZ%s</name>
                     <displayName>DIEPTSIZ1</displayName>
-                    <description>device endpoint-1 transfer size
+                    <description>OTG device IN endpoint x transfer size
                         register</description>
                     <addressOffset>0x130</addressOffset>
                     <size>32</size>
@@ -2258,7 +2261,7 @@
                 <register>
                     <name>DOEPCTL0</name>
                     <displayName>DOEPCTL0</displayName>
-                    <description>device endpoint-0 control
+                    <description>OTG device control OUT endpoint 0 control
                         register</description>
                     <addressOffset>0x300</addressOffset>
                     <size>32</size>
@@ -2342,7 +2345,7 @@
                     <dimIndex>1,2,3,4,5</dimIndex>
                     <name>DOEPCTL%s</name>
                     <displayName>DOEPCTL1</displayName>
-                    <description>device endpoint-1 control
+                    <description>OTG device OUT endpoint x control
                         register</description>
                     <addressOffset>0x320</addressOffset>
                     <size>32</size>
@@ -2444,9 +2447,11 @@
                     </fields>
                 </register>
                 <register>
-                    <name>DOEPINT0</name>
+                    <dim>6</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <name>DOEPINT%s</name>
                     <displayName>DOEPINT0</displayName>
-                    <description>device endpoint-0 interrupt
+                    <description>OTG device OUT endpoint x interrupt
                         register</description>
                     <addressOffset>0x308</addressOffset>
                     <size>32</size>
@@ -2490,52 +2495,9 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DOEPINT%s</name>
-                    <displayName>DOEPINT1</displayName>
-                    <description>device endpoint-1 interrupt
-                        register</description>
-                    <addressOffset>0x328</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000080</resetValue>
-                    <fields>
-                        <field>
-                            <name>XFRC</name>
-                            <description>XFRC</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>EPDISD</name>
-                            <description>EPDISD</description>
-                            <bitOffset>1</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>STUP</name>
-                            <description>STUP</description>
-                            <bitOffset>3</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>OTEPDIS</name>
-                            <description>OTEPDIS</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>B2BSTUP</name>
-                            <description>B2BSTUP</description>
-                            <bitOffset>6</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                    </fields>
-                </register>
-
-                <register>
                     <name>DOEPTSIZ0</name>
                     <displayName>DOEPTSIZ0</displayName>
-                    <description>device OUT endpoint-0 transfer size
+                    <description>OTG device OUT endpoint 0 transfer size
                         register</description>
                     <addressOffset>0x310</addressOffset>
                     <size>32</size>
