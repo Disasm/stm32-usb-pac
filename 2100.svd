@@ -13,7 +13,7 @@
     </cpu>
     <addressUnitBits>8</addressUnitBits>
     <width>32</width>
-    <size>0x20</size>
+    <size>32</size>
     <resetValue>0x0</resetValue>
     <resetMask>0xFFFFFFFF</resetMask>
     <peripherals>

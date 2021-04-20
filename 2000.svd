@@ -13,7 +13,7 @@
     </cpu>
     <addressUnitBits>8</addressUnitBits>
     <width>32</width>
-    <size>0x20</size>
+    <size>32</size>
     <resetValue>0x0</resetValue>
     <resetMask>0xFFFFFFFF</resetMask>
     <peripherals>
@@ -34,7 +34,7 @@
                     <description>OTG_FS control and status register
                         (OTG_FS_GOTGCTL)</description>
                     <addressOffset>0x0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000800</resetValue>
                     <fields>
                         <field>
@@ -115,7 +115,7 @@
                     <description>OTG_FS interrupt register
                         (OTG_FS_GOTGINT)</description>
                     <addressOffset>0x4</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -165,7 +165,7 @@
                     <description>OTG_FS AHB configuration register
                         (OTG_FS_GAHBCFG)</description>
                     <addressOffset>0x8</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -196,7 +196,7 @@
                     <description>OTG_FS USB configuration register
                         (OTG_FS_GUSBCFG)</description>
                     <addressOffset>0xC</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000A00</resetValue>
                     <fields>
                         <field>
@@ -264,7 +264,7 @@
                     <description>OTG_FS reset register
                         (OTG_FS_GRSTCTL)</description>
                     <addressOffset>0x10</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x20000000</resetValue>
                     <fields>
                         <field>
@@ -324,7 +324,7 @@
                     <description>OTG_FS core interrupt register
                         (OTG_FS_GINTSTS)</description>
                     <addressOffset>0x14</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x04000020</resetValue>
                     <fields>
                         <field>
@@ -519,7 +519,7 @@
                     <description>OTG_FS interrupt mask register
                         (OTG_FS_GINTMSK)</description>
                     <addressOffset>0x18</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -723,7 +723,7 @@
                     <description>OTG_FS Receive status debug read(Device
                         mode)</description>
                     <addressOffset>0x1C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -766,7 +766,7 @@
                         mode)</description>
                     <alternateRegister>FS_GRXSTSR_Device</alternateRegister>
                     <addressOffset>0x1C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -808,7 +808,7 @@
                     <description>OTG_FS Receive FIFO size register
                         (OTG_FS_GRXFSIZ)</description>
                     <addressOffset>0x24</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000200</resetValue>
                     <fields>
@@ -826,7 +826,7 @@
                     <description>OTG_FS non-periodic transmit FIFO size
                         register (Device mode)</description>
                     <addressOffset>0x28</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000200</resetValue>
                     <fields>
@@ -852,7 +852,7 @@
                         register (Host mode)</description>
                     <alternateRegister>DIEPTXF0</alternateRegister>
                     <addressOffset>0x28</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000200</resetValue>
                     <fields>
@@ -877,7 +877,7 @@
                     <description>OTG_FS non-periodic transmit FIFO/queue
                         status register (OTG_FS_GNPTXSTS)</description>
                     <addressOffset>0x2C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00080200</resetValue>
                     <fields>
@@ -910,7 +910,7 @@
                     <description>OTG_FS general core configuration register
                         (OTG_FS_GCCFG)</description>
                     <addressOffset>0x38</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -947,7 +947,7 @@
                     <displayName>CID</displayName>
                     <description>core ID register</description>
                     <addressOffset>0x3C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00002000</resetValue>
                     <fields>
@@ -965,7 +965,7 @@
                     <description>OTG_FS Host periodic transmit FIFO size
                         register (OTG_FS_HPTXFSIZ)</description>
                     <addressOffset>0x100</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x02000600</resetValue>
                     <fields>
@@ -990,7 +990,7 @@
                     <description>OTG_FS device IN endpoint transmit FIFO size
                         register (OTG_FS_DIEPTXF2)</description>
                     <addressOffset>0x104</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x02000400</resetValue>
                     <fields>
@@ -1041,7 +1041,7 @@
                     <description>OTG_FS host configuration register
                         (OTG_FS_HCFG)</description>
                     <addressOffset>0x0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -1066,7 +1066,7 @@
                     <description>OTG_FS Host frame interval
                         register</description>
                     <addressOffset>0x4</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x0000EA60</resetValue>
                     <fields>
@@ -1084,7 +1084,7 @@
                     <description>OTG_FS host frame number/frame time
                         remaining register (OTG_FS_HFNUM)</description>
                     <addressOffset>0x8</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00003FFF</resetValue>
                     <fields>
@@ -1108,7 +1108,7 @@
                     <description>OTG_FS_Host periodic transmit FIFO/queue
                         status register (OTG_FS_HPTXSTS)</description>
                     <addressOffset>0x10</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00080100</resetValue>
                     <fields>
                         <field>
@@ -1143,7 +1143,7 @@
                     <description>OTG_FS Host all channels interrupt
                         register</description>
                     <addressOffset>0x14</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1161,7 +1161,7 @@
                     <description>OTG_FS host all channels interrupt mask
                         register</description>
                     <addressOffset>0x18</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1179,7 +1179,7 @@
                     <description>OTG_FS host port control and status register
                         (OTG_FS_HPRT)</description>
                     <addressOffset>0x40</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -1281,7 +1281,7 @@
                     <description>OTG_FS host channel-0 characteristics
                         register (OTG_FS_HCCHAR0)</description>
                     <addressOffset>0x100</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1353,7 +1353,7 @@
                     <description>OTG_FS host channel-1 characteristics
                         register (OTG_FS_HCCHAR1)</description>
                     <addressOffset>0x120</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1425,7 +1425,7 @@
                     <description>OTG_FS host channel-2 characteristics
                         register (OTG_FS_HCCHAR2)</description>
                     <addressOffset>0x140</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1497,7 +1497,7 @@
                     <description>OTG_FS host channel-3 characteristics
                         register (OTG_FS_HCCHAR3)</description>
                     <addressOffset>0x160</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1569,7 +1569,7 @@
                     <description>OTG_FS host channel-4 characteristics
                         register (OTG_FS_HCCHAR4)</description>
                     <addressOffset>0x180</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1641,7 +1641,7 @@
                     <description>OTG_FS host channel-5 characteristics
                         register (OTG_FS_HCCHAR5)</description>
                     <addressOffset>0x1A0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1713,7 +1713,7 @@
                     <description>OTG_FS host channel-6 characteristics
                         register (OTG_FS_HCCHAR6)</description>
                     <addressOffset>0x1C0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1785,7 +1785,7 @@
                     <description>OTG_FS host channel-7 characteristics
                         register (OTG_FS_HCCHAR7)</description>
                     <addressOffset>0x1E0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1857,7 +1857,7 @@
                     <description>OTG_FS host channel-0 interrupt register
                         (OTG_FS_HCINT0)</description>
                     <addressOffset>0x108</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1926,7 +1926,7 @@
                     <description>OTG_FS host channel-1 interrupt register
                         (OTG_FS_HCINT1)</description>
                     <addressOffset>0x128</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -1995,7 +1995,7 @@
                     <description>OTG_FS host channel-2 interrupt register
                         (OTG_FS_HCINT2)</description>
                     <addressOffset>0x148</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2064,7 +2064,7 @@
                     <description>OTG_FS host channel-3 interrupt register
                         (OTG_FS_HCINT3)</description>
                     <addressOffset>0x168</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2133,7 +2133,7 @@
                     <description>OTG_FS host channel-4 interrupt register
                         (OTG_FS_HCINT4)</description>
                     <addressOffset>0x188</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2202,7 +2202,7 @@
                     <description>OTG_FS host channel-5 interrupt register
                         (OTG_FS_HCINT5)</description>
                     <addressOffset>0x1A8</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2271,7 +2271,7 @@
                     <description>OTG_FS host channel-6 interrupt register
                         (OTG_FS_HCINT6)</description>
                     <addressOffset>0x1C8</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2340,7 +2340,7 @@
                     <description>OTG_FS host channel-7 interrupt register
                         (OTG_FS_HCINT7)</description>
                     <addressOffset>0x1E8</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2409,7 +2409,7 @@
                     <description>OTG_FS host channel-0 mask register
                         (OTG_FS_HCINTMSK0)</description>
                     <addressOffset>0x10C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2485,7 +2485,7 @@
                     <description>OTG_FS host channel-1 mask register
                         (OTG_FS_HCINTMSK1)</description>
                     <addressOffset>0x12C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2561,7 +2561,7 @@
                     <description>OTG_FS host channel-2 mask register
                         (OTG_FS_HCINTMSK2)</description>
                     <addressOffset>0x14C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2637,7 +2637,7 @@
                     <description>OTG_FS host channel-3 mask register
                         (OTG_FS_HCINTMSK3)</description>
                     <addressOffset>0x16C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2713,7 +2713,7 @@
                     <description>OTG_FS host channel-4 mask register
                         (OTG_FS_HCINTMSK4)</description>
                     <addressOffset>0x18C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2789,7 +2789,7 @@
                     <description>OTG_FS host channel-5 mask register
                         (OTG_FS_HCINTMSK5)</description>
                     <addressOffset>0x1AC</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2865,7 +2865,7 @@
                     <description>OTG_FS host channel-6 mask register
                         (OTG_FS_HCINTMSK6)</description>
                     <addressOffset>0x1CC</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -2941,7 +2941,7 @@
                     <description>OTG_FS host channel-7 mask register
                         (OTG_FS_HCINTMSK7)</description>
                     <addressOffset>0x1EC</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3017,7 +3017,7 @@
                     <description>OTG_FS host channel-0 transfer size
                         register</description>
                     <addressOffset>0x110</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3047,7 +3047,7 @@
                     <description>OTG_FS host channel-1 transfer size
                         register</description>
                     <addressOffset>0x130</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3077,7 +3077,7 @@
                     <description>OTG_FS host channel-2 transfer size
                         register</description>
                     <addressOffset>0x150</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3107,7 +3107,7 @@
                     <description>OTG_FS host channel-3 transfer size
                         register</description>
                     <addressOffset>0x170</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3137,7 +3137,7 @@
                     <description>OTG_FS host channel-x transfer size
                         register</description>
                     <addressOffset>0x190</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3167,7 +3167,7 @@
                     <description>OTG_FS host channel-5 transfer size
                         register</description>
                     <addressOffset>0x1B0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3197,7 +3197,7 @@
                     <description>OTG_FS host channel-6 transfer size
                         register</description>
                     <addressOffset>0x1D0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3227,7 +3227,7 @@
                     <description>OTG_FS host channel-7 transfer size
                         register</description>
                     <addressOffset>0x1F0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3270,7 +3270,7 @@
                     <description>OTG_FS device configuration register
                         (OTG_FS_DCFG)</description>
                     <addressOffset>0x0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x02200000</resetValue>
                     <fields>
@@ -3307,7 +3307,7 @@
                     <description>OTG_FS device control register
                         (OTG_FS_DCTL)</description>
                     <addressOffset>0x4</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -3388,7 +3388,7 @@
                     <description>OTG_FS device status register
                         (OTG_FS_DSTS)</description>
                     <addressOffset>0x8</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000010</resetValue>
                     <fields>
@@ -3425,7 +3425,7 @@
                     <description>OTG_FS device IN endpoint common interrupt
                         mask register (OTG_FS_DIEPMSK)</description>
                     <addressOffset>0x10</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3479,7 +3479,7 @@
                     <description>OTG_FS device OUT endpoint common interrupt
                         mask register (OTG_FS_DOEPMSK)</description>
                     <addressOffset>0x14</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3518,7 +3518,7 @@
                     <description>OTG_FS device all endpoints interrupt
                         register (OTG_FS_DAINT)</description>
                     <addressOffset>0x18</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3543,7 +3543,7 @@
                     <description>OTG_FS all endpoints interrupt mask register
                         (OTG_FS_DAINTMSK)</description>
                     <addressOffset>0x1C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3567,7 +3567,7 @@
                     <description>OTG_FS device VBUS discharge time
                         register</description>
                     <addressOffset>0x28</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x000017D7</resetValue>
                     <fields>
@@ -3585,7 +3585,7 @@
                     <description>OTG_FS device VBUS pulsing time
                         register</description>
                     <addressOffset>0x2C</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x000005B8</resetValue>
                     <fields>
@@ -3603,7 +3603,7 @@
                     <description>OTG_FS device IN endpoint FIFO empty
                         interrupt mask register</description>
                     <addressOffset>0x34</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -3622,7 +3622,7 @@
                     <description>OTG_FS device control IN endpoint 0 control
                         register (OTG_FS_DIEPCTL0)</description>
                     <addressOffset>0x100</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -3703,7 +3703,7 @@
                     <description>OTG device endpoint-1 control
                         register</description>
                     <addressOffset>0x120</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -3805,7 +3805,7 @@
                     <description>device endpoint-0 control
                         register</description>
                     <addressOffset>0x300</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00008000</resetValue>
                     <fields>
                         <field>
@@ -3886,7 +3886,7 @@
                     <description>device endpoint-1 control
                         register</description>
                     <addressOffset>0x320</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -3988,7 +3988,7 @@
                     <description>device endpoint-x interrupt
                         register</description>
                     <addressOffset>0x108</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000080</resetValue>
                     <fields>
                         <field>
@@ -4041,7 +4041,7 @@
                     <description>device endpoint-1 interrupt
                         register</description>
                     <addressOffset>0x128</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <resetValue>0x00000080</resetValue>
                     <fields>
                         <field>
@@ -4094,7 +4094,7 @@
                     <description>device endpoint-0 interrupt
                         register</description>
                     <addressOffset>0x308</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000080</resetValue>
                     <fields>
@@ -4136,7 +4136,7 @@
                     <description>device endpoint-1 interrupt
                         register</description>
                     <addressOffset>0x328</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000080</resetValue>
                     <fields>
@@ -4178,7 +4178,7 @@
                     <description>device endpoint-0 transfer size
                         register</description>
                     <addressOffset>0x110</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -4202,7 +4202,7 @@
                     <description>device OUT endpoint-0 transfer size
                         register</description>
                     <addressOffset>0x310</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -4232,7 +4232,7 @@
                     <description>device endpoint-1 transfer size
                         register</description>
                     <addressOffset>0x130</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -4262,7 +4262,7 @@
                     <description>OTG_FS device IN endpoint transmit FIFO
                         status register</description>
                     <addressOffset>0x118</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -4281,7 +4281,7 @@
                     <description>OTG_FS device IN endpoint transmit FIFO
                         status register</description>
                     <addressOffset>0x138</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -4300,7 +4300,7 @@
                     <description>device OUT endpoint-1 transfer size
                         register</description>
                     <addressOffset>0x330</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
@@ -4344,7 +4344,7 @@
                     <description>OTG_FS power and clock gating control
                         register (OTG_FS_PCGCCTL)</description>
                     <addressOffset>0x0</addressOffset>
-                    <size>0x20</size>
+                    <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
