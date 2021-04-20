@@ -1589,8 +1589,8 @@
                 <register>
                     <name>DCFG</name>
                     <displayName>DCFG</displayName>
-                    <description>OTG_FS device configuration register
-                        (OTG_FS_DCFG)</description>
+                    <description>OTG device configuration
+                        register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1626,8 +1626,7 @@
                 <register>
                     <name>DCTL</name>
                     <displayName>DCTL</displayName>
-                    <description>OTG_FS device control register
-                        (OTG_FS_DCTL)</description>
+                    <description>OTG device control register</description>
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -1707,8 +1706,7 @@
                 <register>
                     <name>DSTS</name>
                     <displayName>DSTS</displayName>
-                    <description>OTG_FS device status register
-                        (OTG_FS_DSTS)</description>
+                    <description>OTG device status register</description>
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1744,8 +1742,8 @@
                 <register>
                     <name>DIEPMSK</name>
                     <displayName>DIEPMSK</displayName>
-                    <description>OTG_FS device IN endpoint common interrupt
-                        mask register (OTG_FS_DIEPMSK)</description>
+                    <description>OTG device IN endpoint common interrupt
+                        mask register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1774,7 +1772,7 @@
                         </field>
                         <field>
                             <name>ITTXFEMSK</name>
-                            <description>IN token received when TxFIFO empty
+                            <description>IN token received when Tx FIFO empty
                                 mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
@@ -1798,8 +1796,8 @@
                 <register>
                     <name>DOEPMSK</name>
                     <displayName>DOEPMSK</displayName>
-                    <description>OTG_FS device OUT endpoint common interrupt
-                        mask register (OTG_FS_DOEPMSK)</description>
+                    <description>OTG device OUT endpoint common interrupt
+                        mask register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1837,8 +1835,8 @@
                 <register>
                     <name>DAINT</name>
                     <displayName>DAINT</displayName>
-                    <description>OTG_FS device all endpoints interrupt
-                        register (OTG_FS_DAINT)</description>
+                    <description>OTG device all endpoints interrupt
+                        register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1862,8 +1860,8 @@
                 <register>
                     <name>DAINTMSK</name>
                     <displayName>DAINTMSK</displayName>
-                    <description>OTG_FS all endpoints interrupt mask register
-                        (OTG_FS_DAINTMSK)</description>
+                    <description>OTG all endpoints interrupt mask
+                        register</description>
                     <addressOffset>0x1C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1886,7 +1884,7 @@
                 <register>
                     <name>DVBUSDIS</name>
                     <displayName>DVBUSDIS</displayName>
-                    <description>OTG_FS device VBUS discharge time
+                    <description>OTG device VBUS discharge time
                         register</description>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
@@ -1904,7 +1902,7 @@
                 <register>
                     <name>DVBUSPULSE</name>
                     <displayName>DVBUSPULSE</displayName>
-                    <description>OTG_FS device VBUS pulsing time
+                    <description>OTG device VBUS pulsing time
                         register</description>
                     <addressOffset>0x2C</addressOffset>
                     <size>32</size>
@@ -1922,7 +1920,7 @@
                 <register>
                     <name>DIEPEMPMSK</name>
                     <displayName>DIEPEMPMSK</displayName>
-                    <description>OTG_FS device IN endpoint FIFO empty
+                    <description>OTG device IN endpoint FIFO empty
                         interrupt mask register</description>
                     <addressOffset>0x34</addressOffset>
                     <size>32</size>
@@ -1941,8 +1939,8 @@
                 <register>
                     <name>DIEPCTL0</name>
                     <displayName>DIEPCTL0</displayName>
-                    <description>OTG_FS device control IN endpoint 0 control
-                        register (OTG_FS_DIEPCTL0)</description>
+                    <description>OTG device control IN endpoint 0 control
+                        register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -2020,9 +2018,12 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPCTL%s</name>
+                    <dim>5</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <name>DIEPCTL%s</name>
                     <displayName>DIEPCTL1</displayName>
-                    <description>OTG device endpoint-1 control
+                    <description>OTG device IN endpoint x control
                         register</description>
                     <addressOffset>0x120</addressOffset>
                     <size>32</size>

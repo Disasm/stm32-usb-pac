@@ -1785,7 +1785,7 @@
                 <register>
                     <name>DCFG</name>
                     <displayName>DCFG</displayName>
-                    <description>OTG_HS device configuration
+                    <description>OTG device configuration
                         register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
@@ -1800,7 +1800,7 @@
                         </field>
                         <field>
                             <name>NZLSOHSK</name>
-                            <description>Nonzero-length status OUT
+                            <description>Non-zero-length status OUT
                                 handshake</description>
                             <bitOffset>2</bitOffset>
                             <bitWidth>1</bitWidth>
@@ -1813,8 +1813,7 @@
                         </field>
                         <field>
                             <name>PFIVL</name>
-                            <description>Periodic (micro)frame
-                                interval</description>
+                            <description>Periodic frame interval</description>
                             <bitOffset>11</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
@@ -1830,7 +1829,7 @@
                 <register>
                     <name>DCTL</name>
                     <displayName>DCTL</displayName>
-                    <description>OTG_HS device control register</description>
+                    <description>OTG device control register</description>
                     <addressOffset>0x4</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -1910,7 +1909,7 @@
                 <register>
                     <name>DSTS</name>
                     <displayName>DSTS</displayName>
-                    <description>OTG_HS device status register</description>
+                    <description>OTG device status register</description>
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1946,7 +1945,7 @@
                 <register>
                     <name>DIEPMSK</name>
                     <displayName>DIEPMSK</displayName>
-                    <description>OTG_HS device IN endpoint common interrupt
+                    <description>OTG device IN endpoint common interrupt
                         mask register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
@@ -1969,14 +1968,14 @@
                         </field>
                         <field>
                             <name>TOM</name>
-                            <description>Timeout condition mask (nonisochronous
+                            <description>Timeout condition mask (Non-isochronous
                                 endpoints)</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>ITTXFEMSK</name>
-                            <description>IN token received when TxFIFO empty
+                            <description>IN token received when Tx FIFO empty
                                 mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
@@ -2012,7 +2011,7 @@
                 <register>
                     <name>DOEPMSK</name>
                     <displayName>DOEPMSK</displayName>
-                    <description>OTG_HS device OUT endpoint common interrupt
+                    <description>OTG device OUT endpoint common interrupt
                         mask register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
@@ -2070,7 +2069,7 @@
                 <register>
                     <name>DAINT</name>
                     <displayName>DAINT</displayName>
-                    <description>OTG_HS device all endpoints interrupt
+                    <description>OTG device all endpoints interrupt
                         register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
@@ -2095,7 +2094,7 @@
                 <register>
                     <name>DAINTMSK</name>
                     <displayName>DAINTMSK</displayName>
-                    <description>OTG_HS all endpoints interrupt mask
+                    <description>OTG all endpoints interrupt mask
                         register</description>
                     <addressOffset>0x1C</addressOffset>
                     <size>32</size>
@@ -2119,7 +2118,7 @@
                 <register>
                     <name>DVBUSDIS</name>
                     <displayName>DVBUSDIS</displayName>
-                    <description>OTG_HS device VBUS discharge time
+                    <description>OTG device VBUS discharge time
                         register</description>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
@@ -2137,7 +2136,7 @@
                 <register>
                     <name>DVBUSPULSE</name>
                     <displayName>DVBUSPULSE</displayName>
-                    <description>OTG_HS device VBUS pulsing time
+                    <description>OTG device VBUS pulsing time
                         register</description>
                     <addressOffset>0x2C</addressOffset>
                     <size>32</size>
@@ -2155,7 +2154,7 @@
                 <register>
                     <name>DTHRCTL</name>
                     <displayName>DTHRCTL</displayName>
-                    <description>OTG_HS Device threshold control
+                    <description>OTG device threshold control
                         register</description>
                     <addressOffset>0x30</addressOffset>
                     <size>32</size>
@@ -2205,7 +2204,7 @@
                 <register>
                     <name>DIEPEMPMSK</name>
                     <displayName>DIEPEMPMSK</displayName>
-                    <description>OTG_HS device IN endpoint FIFO empty
+                    <description>OTG device IN endpoint FIFO empty
                         interrupt mask register</description>
                     <addressOffset>0x34</addressOffset>
                     <size>32</size>
@@ -2224,7 +2223,7 @@
                 <register>
                     <name>DEACHINT</name>
                     <displayName>DEACHINT</displayName>
-                    <description>OTG_HS device each endpoint interrupt
+                    <description>OTG device each endpoint interrupt
                         register</description>
                     <addressOffset>0x38</addressOffset>
                     <size>32</size>
@@ -2249,7 +2248,7 @@
                 <register>
                     <name>DEACHINTMSK</name>
                     <displayName>DEACHINTMSK</displayName>
-                    <description>OTG_HS device each endpoint interrupt
+                    <description>OTG device each endpoint interrupt
                         register mask</description>
                     <addressOffset>0x3C</addressOffset>
                     <size>32</size>
@@ -2275,7 +2274,7 @@
                 <register>
                     <name>DIEPEACHMSK1</name>
                     <displayName>DIEPEACHMSK1</displayName>
-                    <description>OTG_HS device each in endpoint-1 interrupt
+                    <description>OTG device each in endpoint-1 interrupt
                         register</description>
                     <addressOffset>0x40</addressOffset>
                     <size>32</size>
@@ -2431,7 +2430,7 @@
                 <register>
                     <name>DIEPCTL0</name>
                     <displayName>DIEPCTL0</displayName>
-                    <description>OTG device endpoint-0 control
+                    <description>OTG device control IN endpoint 0 control
                         register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
@@ -2531,9 +2530,12 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim><dimIncrement>0x20</dimIncrement><dimIndex>1,2,3,4,5</dimIndex><name>DIEPCTL%s</name>
+                    <dim>5</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <name>DIEPCTL%s</name>
                     <displayName>DIEPCTL1</displayName>
-                    <description>OTG device endpoint-1 control
+                    <description>OTG device IN endpoint x control
                         register</description>
                     <addressOffset>0x120</addressOffset>
                     <size>32</size>
