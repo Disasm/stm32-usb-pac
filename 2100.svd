@@ -1154,9 +1154,9 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim>
+                    <dim>8</dim>
                     <dimIncrement>0x4</dimIncrement>
-                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <dimIndex>1,2,3,4,5,6,7,8</dimIndex>
                     <name>DIEPTXF%s</name>
                     <displayName>DIEPTXF1</displayName>
                     <description>OTG device IN endpoint transmit FIFO size
@@ -2509,9 +2509,9 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim>
+                    <dim>8</dim>
                     <dimIncrement>0x20</dimIncrement>
-                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <dimIndex>1,2,3,4,5,6,7,8</dimIndex>
                     <name>DIEPCTL%s</name>
                     <displayName>DIEPCTL1</displayName>
                     <description>OTG device IN endpoint x control
@@ -2732,9 +2732,9 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim>
+                    <dim>8</dim>
                     <dimIncrement>0x20</dimIncrement>
-                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <dimIndex>1,2,3,4,5,6,7,8</dimIndex>
                     <name>DIEPTSIZ%s</name>
                     <displayName>DIEPTSIZ1</displayName>
                     <description>OTG device IN endpoint x transfer size
@@ -2887,9 +2887,9 @@
                     </fields>
                 </register>
                 <register>
-                    <dim>5</dim>
+                    <dim>8</dim>
                     <dimIncrement>0x20</dimIncrement>
-                    <dimIndex>1,2,3,4,5</dimIndex>
+                    <dimIndex>1,2,3,4,5,6,7,8</dimIndex>
                     <name>DOEPCTL%s</name>
                     <displayName>DOEPCTL1</displayName>
                     <description>OTG device OUT endpoint x control
