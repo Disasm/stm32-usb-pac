@@ -51,6 +51,48 @@
                             <access>read-write</access>
                         </field>
                         <field>
+                            <name>VBVALOEN</name>
+                            <description>VBUS valid override enable</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>VBVALOVAL</name>
+                            <description>VBUS valid override value</description>
+                            <bitOffset>3</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>AVALOEN</name>
+                            <description>A-peripheral session valid override enable</description>
+                            <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>AVALOVAL</name>
+                            <description>A-peripheral session valid override value</description>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>BVALOEN</name>
+                            <description>B-peripheral session valid override enable</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>BVALOVAL</name>
+                            <description>B-peripheral session valid override value</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
                             <name>HNGSCS</name>
                             <description>Host negotiation success</description>
                             <bitOffset>8</bitOffset>
@@ -75,6 +117,13 @@
                             <name>DHNPEN</name>
                             <description>Device HNP enabled</description>
                             <bitOffset>11</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>EHEN</name>
+                            <description>Embedded host enable</description>
+                            <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
@@ -106,6 +155,20 @@
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
+                        <field>
+                            <name>OTGVER</name>
+                            <description>OTG version</description>
+                            <bitOffset>20</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>CURMOD</name>
+                            <description>CURMOD</description>
+                            <bitOffset>21</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
                     </fields>
                 </register>
                 <register>
@@ -125,15 +188,13 @@
                         </field>
                         <field>
                             <name>SRSSCHG</name>
-                            <description>Session request success status
-                                change</description>
+                            <description>Session request success status change</description>
                             <bitOffset>8</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>HNSSCHG</name>
-                            <description>Host negotiation success status
-                                change</description>
+                            <description>Host negotiation success status change</description>
                             <bitOffset>9</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -155,6 +216,12 @@
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
+                        <field>
+                            <name>IDCHNG</name>
+                            <description>ID pin value changed</description>
+                            <bitOffset>20</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
                     </fields>
                 </register>
                 <register>
@@ -167,7 +234,7 @@
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
-                            <name>GINT</name>
+                            <name>GINTMSK</name>
                             <description>Global interrupt mask</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
@@ -186,14 +253,13 @@
                         </field>
                         <field>
                             <name>TXFELVL</name>
-                            <description>TxFIFO empty level</description>
+                            <description>Tx FIFO empty level</description>
                             <bitOffset>7</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>PTXFELVL</name>
-                            <description>Periodic TxFIFO empty
-                                level</description>
+                            <description>Periodic Tx FIFO empty level</description>
                             <bitOffset>8</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -216,8 +282,7 @@
                         </field>
                         <field>
                             <name>PHYSEL</name>
-                            <description>USB 2.0 high-speed ULPI PHY or USB 1.1
-                                full-speed serial transceiver select</description>
+                            <description>Full Speed serial transceiver select</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
@@ -280,16 +345,14 @@
                         </field>
                         <field>
                             <name>ULPIEVBUSI</name>
-                            <description>ULPI external VBUS
-                                indicator</description>
+                            <description>ULPI external VBUS indicator</description>
                             <bitOffset>21</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>TSDPS</name>
-                            <description>TermSel DLine pulsing
-                                selection</description>
+                            <description>TermSel DLine pulsing selection</description>
                             <bitOffset>22</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -310,8 +373,7 @@
                         </field>
                         <field>
                             <name>ULPIIPD</name>
-                            <description>ULPI interface protect
-                                disable</description>
+                            <description>ULPI interface protect disable</description>
                             <bitOffset>25</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -327,13 +389,6 @@
                             <name>FDMOD</name>
                             <description>Force device mode</description>
                             <bitOffset>30</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTXPKT</name>
-                            <description>Corrupt Tx packet</description>
-                            <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
