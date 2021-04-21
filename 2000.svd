@@ -328,8 +328,8 @@
                             <access>read-write</access>
                         </field>
                         <field>
-                            <name>HSRST</name>
-                            <description>HCLK soft reset</description>
+                            <name>PSRST</name>
+                            <description>Partial soft reset</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -343,21 +343,21 @@
                         </field>
                         <field>
                             <name>RXFFLSH</name>
-                            <description>RxFIFO flush</description>
+                            <description>Rx FIFO flush</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>TXFFLSH</name>
-                            <description>TxFIFO flush</description>
+                            <description>Tx FIFO flush</description>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>TXFNUM</name>
-                            <description>TxFIFO number</description>
+                            <description>Tx FIFO number</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>5</bitWidth>
                             <access>read-write</access>
@@ -465,16 +465,14 @@
                         </field>
                         <field>
                             <name>ISOODRP</name>
-                            <description>Isochronous OUT packet dropped
-                                interrupt</description>
+                            <description>Isochronous OUT packet dropped interrupt</description>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EOPF</name>
-                            <description>End of periodic frame
-                                interrupt</description>
+                            <description>End of periodic frame interrupt</description>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -495,8 +493,7 @@
                         </field>
                         <field>
                             <name>IISOIXFR</name>
-                            <description>Incomplete isochronous IN
-                                transfer</description>
+                            <description>Incomplete isochronous IN transfer</description>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -507,6 +504,13 @@
                                 mode)/Incomplete isochronous OUT transfer (Device
                                 mode)</description>
                             <bitOffset>21</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>RSTDET</name>
+                            <description>Reset detected interrupt</description>
+                            <bitOffset>23</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
@@ -532,6 +536,13 @@
                             <access>read-only</access>
                         </field>
                         <field>
+                            <name>LPMINT</name>
+                            <description>LPM interrupt</description>
+                            <bitOffset>27</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
                             <name>CIDSCHG</name>
                             <description>Connector ID status change</description>
                             <bitOffset>28</bitOffset>
@@ -540,16 +551,14 @@
                         </field>
                         <field>
                             <name>DISCINT</name>
-                            <description>Disconnect detected
-                                interrupt</description>
+                            <description>Disconnect detected interrupt</description>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>SRQINT</name>
-                            <description>Session request/new session detected
-                                interrupt</description>
+                            <description>Session request/new session detected interrupt</description>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
