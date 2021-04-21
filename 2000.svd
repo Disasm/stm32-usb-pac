@@ -582,8 +582,7 @@
                     <fields>
                         <field>
                             <name>MMISM</name>
-                            <description>Mode mismatch interrupt
-                                mask</description>
+                            <description>Mode mismatch interrupt mask</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -618,16 +617,14 @@
                         </field>
                         <field>
                             <name>GINAKEFFM</name>
-                            <description>Global non-periodic IN NAK effective
-                                mask</description>
+                            <description>Global non-periodic IN NAK effective mask</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>GONAKEFFM</name>
-                            <description>Global OUT NAK effective
-                                mask</description>
+                            <description>Global OUT NAK effective mask</description>
                             <bitOffset>7</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -662,48 +659,35 @@
                         </field>
                         <field>
                             <name>ISOODRPM</name>
-                            <description>Isochronous OUT packet dropped interrupt
-                                mask</description>
+                            <description>Isochronous OUT packet dropped interrupt mask</description>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EOPFM</name>
-                            <description>End of periodic frame interrupt
-                                mask</description>
+                            <description>End of periodic frame interrupt mask</description>
                             <bitOffset>15</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
-                            <name>EPMISM</name>
-                            <description>Endpoint mismatch interrupt
-                                mask</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
                             <name>IEPINT</name>
-                            <description>IN endpoints interrupt
-                                mask</description>
+                            <description>IN endpoints interrupt mask</description>
                             <bitOffset>18</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>OEPINT</name>
-                            <description>OUT endpoints interrupt
-                                mask</description>
+                            <description>OUT endpoints interrupt mask</description>
                             <bitOffset>19</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>IISOIXFRM</name>
-                            <description>Incomplete isochronous IN transfer
-                                mask</description>
+                            <description>Incomplete isochronous IN transfer mask</description>
                             <bitOffset>20</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -718,6 +702,13 @@
                             <access>read-write</access>
                         </field>
                         <field>
+                            <name>RSTDETM</name>
+                            <description>Reset detected interrupt mask</description>
+                            <bitOffset>23</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
                             <name>PRTIM</name>
                             <description>Host port interrupt mask</description>
                             <bitOffset>24</bitOffset>
@@ -726,47 +717,49 @@
                         </field>
                         <field>
                             <name>HCIM</name>
-                            <description>Host channels interrupt
-                                mask</description>
+                            <description>Host channels interrupt mask</description>
                             <bitOffset>25</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>PTXFEM</name>
-                            <description>Periodic TxFIFO empty mask</description>
+                            <description>Periodic Tx FIFO empty mask</description>
                             <bitOffset>26</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
+                            <name>LPMINTM</name>
+                            <description>LPM interrupt mask</description>
+                            <bitOffset>27</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
                             <name>CIDSCHGM</name>
-                            <description>Connector ID status change
-                                mask</description>
+                            <description>Connector ID status change mask</description>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>DISCINT</name>
-                            <description>Disconnect detected interrupt
-                                mask</description>
+                            <description>Disconnect detected interrupt mask</description>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>SRQIM</name>
-                            <description>Session request/new session detected
-                                interrupt mask</description>
+                            <description>Session request/new session detected interrupt mask</description>
                             <bitOffset>30</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>WUIM</name>
-                            <description>Resume/remote wakeup detected interrupt
-                                mask</description>
+                            <description>Resume/remote wakeup detected interrupt mask</description>
                             <bitOffset>31</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -959,8 +952,7 @@
                 <register>
                     <name>HNPTXFSIZ</name>
                     <displayName>HNPTXFSIZ</displayName>
-                    <description>OTG non-periodic transmit FIFO size
-                        register (Host mode)</description>
+                    <description>OTG non-periodic transmit FIFO size register (Host mode)</description>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -968,8 +960,7 @@
                     <fields>
                         <field>
                             <name>NPTXFSA</name>
-                            <description>Non-periodic transmit RAM start
-                                address</description>
+                            <description>Non-periodic transmit RAM start address</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -984,8 +975,7 @@
                 <register>
                     <name>DIEPTXF0</name>
                     <displayName>DIEPTXF0</displayName>
-                    <description>Endpoint 0 transmit FIFO size (Device
-                        mode)</description>
+                    <description>Endpoint 0 transmit FIFO size (Device mode)</description>
                     <alternateRegister>HNPTXFSIZ</alternateRegister>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
@@ -994,8 +984,7 @@
                     <fields>
                         <field>
                             <name>TX0FSA</name>
-                            <description>Endpoint 0 transmit RAM start
-                                address</description>
+                            <description>Endpoint 0 transmit RAM start address</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -1008,10 +997,9 @@
                     </fields>
                 </register>
                 <register>
-                    <name>GNPTXSTS</name>
-                    <displayName>GNPTXSTS</displayName>
-                    <description>OTG non-periodic transmit FIFO/queue
-                        status register</description>
+                    <name>HNPTXSTS</name>
+                    <displayName>HNPTXSTS</displayName>
+                    <description>OTG non-periodic transmit FIFO/queue status register</description>
                     <addressOffset>0x2C</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1019,22 +1007,19 @@
                     <fields>
                         <field>
                             <name>NPTXFSAV</name>
-                            <description>Non-periodic Tx FIFO space
-                                available</description>
+                            <description>Non-periodic Tx FIFO space available</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
                         <field>
                             <name>NPTQXSAV</name>
-                            <description>Non-periodic transmit request queue
-                                space available</description>
+                            <description>Non-periodic transmit request queue space available</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>8</bitWidth>
                         </field>
                         <field>
                             <name>NPTXQTOP</name>
-                            <description>Top of the non-periodic transmit request
-                                queue</description>
+                            <description>Top of the non-periodic transmit request queue</description>
                             <bitOffset>24</bitOffset>
                             <bitWidth>7</bitWidth>
                         </field>
@@ -1087,13 +1072,118 @@
                     <addressOffset>0x54</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
-                    <!-- TODO -->
+                    <fields>
+                        <field>
+                            <name>LPMEN</name>
+                            <description>LPM support enable</description>
+                            <bitOffset>0</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>LPMACK</name>
+                            <description>LPM token acknowledge enable</description>
+                            <bitOffset>1</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>BESL</name>
+                            <description>Best effort service latency</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>4</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>REMWAKE</name>
+                            <description>bRemoteWake value</description>
+                            <bitOffset>6</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>L1SSEN</name>
+                            <description>L1 Shallow Sleep enable</description>
+                            <bitOffset>7</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>BESLTHRS</name>
+                            <description>BESL threshold</description>
+                            <bitOffset>8</bitOffset>
+                            <bitWidth>4</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>L1DSEN</name>
+                            <description>L1 deep sleep enable</description>
+                            <bitOffset>12</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>LPMRST</name>
+                            <description>LPM response</description>
+                            <bitOffset>13</bitOffset>
+                            <bitWidth>2</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>SLPSTS</name>
+                            <description>Port sleep status</description>
+                            <bitOffset>15</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>L1RSMOK</name>
+                            <description>Sleep State Resume OK</description>
+                            <bitOffset>16</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>LPMCHIDX</name>
+                            <description>LPM Channel Index</description>
+                            <bitOffset>17</bitOffset>
+                            <bitWidth>4</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>LPMRCNT</name>
+                            <description>LPM retry count</description>
+                            <bitOffset>21</bitOffset>
+                            <bitWidth>3</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>SNDLPM</name>
+                            <description>Send LPM transaction</description>
+                            <bitOffset>24</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>LPMRCNTSTS</name>
+                            <description>LPM retry count status</description>
+                            <bitOffset>25</bitOffset>
+                            <bitWidth>3</bitWidth>
+                            <access>read-only</access>
+                        </field>
+                        <field>
+                            <name>ENBESL</name>
+                            <description>Enable best effort service               latency</description>
+                            <bitOffset>28</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                    </fields>
                 </register>
                 <register>
                     <name>HPTXFSIZ</name>
                     <displayName>HPTXFSIZ</displayName>
-                    <description>OTG Host periodic transmit FIFO size
-                        register</description>
+                    <description>OTG Host periodic transmit FIFO size register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1101,8 +1191,7 @@
                     <fields>
                         <field>
                             <name>PTXSA</name>
-                            <description>Host periodic Tx FIFO start
-                                address</description>
+                            <description>Host periodic Tx FIFO start address</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -1120,8 +1209,7 @@
                     <dimIndex>1,2,3,4,5</dimIndex>
                     <name>DIEPTXF%s</name>
                     <displayName>DIEPTXF1</displayName>
-                    <description>OTG device IN endpoint transmit FIFO size
-                        register</description>
+                    <description>OTG device IN endpoint transmit FIFO size register</description>
                     <addressOffset>0x104</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1129,8 +1217,7 @@
                     <fields>
                         <field>
                             <name>INEPTXSA</name>
-                            <description>IN endpoint FIFOx transmit RAM start
-                                address</description>
+                            <description>IN endpoint FIFOx transmit RAM start address</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
