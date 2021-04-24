@@ -1929,6 +1929,18 @@
                             <bitWidth>2</bitWidth>
                         </field>
                         <field>
+                            <name>XCVRDLY</name>
+                            <description>Transceiver delay</description>
+                            <bitOffset>14</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>ERRATIM</name>
+                            <description>Erratic error interrupt mask</description>
+                            <bitOffset>15</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
                             <name>PERSCHIVL</name>
                             <description>Periodic scheduling interval</description>
                             <bitOffset>24</bitOffset>
@@ -2014,6 +2026,13 @@
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
+                        <field>
+                            <name>DSBESLRJCT</name>
+                            <description>Deep sleep BESL reject</description>
+                            <bitOffset>18</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
                     </fields>
                 </register>
                 <register>
@@ -2045,18 +2064,22 @@
                         </field>
                         <field>
                             <name>FNSOF</name>
-                            <description>Frame number of the received
-                                SOF</description>
+                            <description>Frame number of the received SOF</description>
                             <bitOffset>8</bitOffset>
                             <bitWidth>14</bitWidth>
+                        </field>
+                        <field>
+                            <name>DEVLNSTS</name>
+                            <description>Device line status</description>
+                            <bitOffset>22</bitOffset>
+                            <bitWidth>2</bitWidth>
                         </field>
                     </fields>
                 </register>
                 <register>
                     <name>DIEPMSK</name>
                     <displayName>DIEPMSK</displayName>
-                    <description>OTG device IN endpoint common interrupt
-                        mask register</description>
+                    <description>OTG device IN endpoint common interrupt mask register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2064,43 +2087,43 @@
                     <fields>
                         <field>
                             <name>XFRCM</name>
-                            <description>Transfer completed interrupt
-                                mask</description>
+                            <description>Transfer completed interrupt mask</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>EPDM</name>
-                            <description>Endpoint disabled interrupt
-                                mask</description>
+                            <description>Endpoint disabled interrupt mask</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
+                            <name>AHBERRM</name>
+                            <description>AHB error mask</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
                             <name>TOM</name>
-                            <description>Timeout condition mask (Non-isochronous
-                                endpoints)</description>
+                            <description>Timeout condition mask (Non-isochronous endpoints)</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>ITTXFEMSK</name>
-                            <description>IN token received when Tx FIFO empty
-                                mask</description>
+                            <description>IN token received when Tx FIFO empty mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>INEPNMM</name>
-                            <description>IN token received with EP mismatch
-                                mask</description>
+                            <description>IN token received with EP mismatch mask</description>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>INEPNEM</name>
-                            <description>IN endpoint NAK effective
-                                mask</description>
+                            <description>IN endpoint NAK effective mask</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -2111,9 +2134,9 @@
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>BIM</name>
-                            <description>BNA interrupt mask</description>
-                            <bitOffset>9</bitOffset>
+                            <name>NAKM</name>
+                            <description>NAK interrupt mask</description>
+                            <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                     </fields>
@@ -2121,8 +2144,7 @@
                 <register>
                     <name>DOEPMSK</name>
                     <displayName>DOEPMSK</displayName>
-                    <description>OTG device OUT endpoint common interrupt
-                        mask register</description>
+                    <description>OTG device OUT endpoint common interrupt mask register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2130,16 +2152,20 @@
                     <fields>
                         <field>
                             <name>XFRCM</name>
-                            <description>Transfer completed interrupt
-                                mask</description>
+                            <description>Transfer completed interrupt mask</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>EPDM</name>
-                            <description>Endpoint disabled interrupt
-                                mask</description>
+                            <description>Endpoint disabled interrupt mask</description>
                             <bitOffset>1</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>AHBERRM</name>
+                            <description>AHB error mask</description>
+                            <bitOffset>2</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
@@ -2150,28 +2176,44 @@
                         </field>
                         <field>
                             <name>OTEPDM</name>
-                            <description>OUT token received when endpoint
-                                disabled mask</description>
+                            <description>OUT token received when endpoint disabled mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>B2BSTUP</name>
-                            <description>Back-to-back SETUP packets received
-                                mask</description>
+                            <name>STSPHSRXM</name>
+                            <description>Status phase received for control write mask</description>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>B2BSTUPM</name>
+                            <description>Back-to-back SETUP packets received mask</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>OPEM</name>
+                            <name>OUTPKTERRM</name>
                             <description>OUT packet error mask</description>
                             <bitOffset>8</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>BOIM</name>
-                            <description>BNA interrupt mask</description>
-                            <bitOffset>9</bitOffset>
+                            <name>BERRM</name>
+                            <description>Babble error interrupt mask</description>
+                            <bitOffset>12</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>NAKMSK</name>
+                            <description>NAK interrupt mask</description>
+                            <bitOffset>13</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>NYETMSK</name>
+                            <description>NYET interrupt mask</description>
+                            <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                     </fields>
@@ -2179,8 +2221,7 @@
                 <register>
                     <name>DAINT</name>
                     <displayName>DAINT</displayName>
-                    <description>OTG device all endpoints interrupt
-                        register</description>
+                    <description>OTG device all endpoints interrupt register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -2194,8 +2235,7 @@
                         </field>
                         <field>
                             <name>OEPINT</name>
-                            <description>OUT endpoint interrupt
-                                bits</description>
+                            <description>OUT endpoint interrupt bits</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -2204,8 +2244,7 @@
                 <register>
                     <name>DAINTMSK</name>
                     <displayName>DAINTMSK</displayName>
-                    <description>OTG all endpoints interrupt mask
-                        register</description>
+                    <description>OTG all endpoints interrupt mask register</description>
                     <addressOffset>0x1C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2228,8 +2267,7 @@
                 <register>
                     <name>DVBUSDIS</name>
                     <displayName>DVBUSDIS</displayName>
-                    <description>OTG device VBUS discharge time
-                        register</description>
+                    <description>OTG device VBUS discharge time register</description>
                     <addressOffset>0x28</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2246,8 +2284,7 @@
                 <register>
                     <name>DVBUSPULSE</name>
                     <displayName>DVBUSPULSE</displayName>
-                    <description>OTG device VBUS pulsing time
-                        register</description>
+                    <description>OTG device VBUS pulsing time register</description>
                     <addressOffset>0x2C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2264,8 +2301,7 @@
                 <register>
                     <name>DTHRCTL</name>
                     <displayName>DTHRCTL</displayName>
-                    <description>OTG device threshold control
-                        register</description>
+                    <description>OTG device threshold control register</description>
                     <addressOffset>0x30</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2273,15 +2309,13 @@
                     <fields>
                         <field>
                             <name>NONISOTHREN</name>
-                            <description>Nonisochronous IN endpoints threshold
-                                enable</description>
+                            <description>Nonisochronous IN endpoints threshold enable</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>ISOTHREN</name>
-                            <description>ISO IN endpoint threshold
-                                enable</description>
+                            <description>ISO IN endpoint threshold enable</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -2314,8 +2348,7 @@
                 <register>
                     <name>DIEPEMPMSK</name>
                     <displayName>DIEPEMPMSK</displayName>
-                    <description>OTG device IN endpoint FIFO empty
-                        interrupt mask register</description>
+                    <description>OTG device IN endpoint FIFO empty interrupt mask register</description>
                     <addressOffset>0x34</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2323,8 +2356,7 @@
                     <fields>
                         <field>
                             <name>INEPTXFEM</name>
-                            <description>IN EP Tx FIFO empty interrupt mask
-                                bits</description>
+                            <description>IN EP Tx FIFO empty interrupt mask bits</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -2333,11 +2365,10 @@
                 <register>
                     <name>DEACHINT</name>
                     <displayName>DEACHINT</displayName>
-                    <description>OTG device each endpoint interrupt
-                        register</description>
+                    <description>OTG device each endpoint interrupt register</description>
                     <addressOffset>0x38</addressOffset>
                     <size>32</size>
-                    <access>read-write</access>
+                    <access>read-only</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
@@ -2348,8 +2379,7 @@
                         </field>
                         <field>
                             <name>OEP1INT</name>
-                            <description>OUT endpoint 1 interrupt
-                                bit</description>
+                            <description>OUT endpoint 1 interrupt bit</description>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -2358,8 +2388,7 @@
                 <register>
                     <name>DEACHINTMSK</name>
                     <displayName>DEACHINTMSK</displayName>
-                    <description>OTG device each endpoint interrupt
-                        register mask</description>
+                    <description>OTG device each endpoint interrupt mask register</description>
                     <addressOffset>0x3C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2367,15 +2396,13 @@
                     <fields>
                         <field>
                             <name>IEP1INTM</name>
-                            <description>IN Endpoint 1 interrupt mask
-                                bit</description>
+                            <description>IN Endpoint 1 interrupt mask bit</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>OEP1INTM</name>
-                            <description>OUT Endpoint 1 interrupt mask
-                                bit</description>
+                            <description>OUT Endpoint 1 interrupt mask bit</description>
                             <bitOffset>17</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -2384,52 +2411,45 @@
                 <register>
                     <name>DIEPEACHMSK1</name>
                     <displayName>DIEPEACHMSK1</displayName>
-                    <description>OTG device each in endpoint-1 interrupt
-                        register</description>
-                    <addressOffset>0x40</addressOffset>
+                    <description>OTG device each IN endpoint-1 interrupt mask register</description>
+                    <addressOffset>0x44</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
-                            <description>Transfer completed interrupt
-                                mask</description>
+                            <description>Transfer completed interrupt mask</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>EPDM</name>
-                            <description>Endpoint disabled interrupt
-                                mask</description>
+                            <description>Endpoint disabled interrupt mask</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
+                            <name>AHBERRM</name>
+                            <description>AHB error mask</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
                             <name>TOM</name>
-                            <description>Timeout condition mask (nonisochronous
-                                endpoints)</description>
+                            <description>Timeout condition mask (Non-isochronous endpoints)</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>ITTXFEMSK</name>
-                            <description>IN token received when TxFIFO empty
-                                mask</description>
+                            <description>IN token received when Tx FIFO empty mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>INEPNMM</name>
-                            <description>IN token received with EP mismatch
-                                mask</description>
-                            <bitOffset>5</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
                             <name>INEPNEM</name>
-                            <description>IN endpoint NAK effective
-                                mask</description>
+                            <description>IN endpoint NAK effective mask</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -2437,12 +2457,6 @@
                             <name>TXFURM</name>
                             <description>FIFO underrun mask</description>
                             <bitOffset>8</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>BIM</name>
-                            <description>BNA interrupt mask</description>
-                            <bitOffset>9</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
@@ -2456,81 +2470,68 @@
                 <register>
                     <name>DOEPEACHMSK1</name>
                     <displayName>DOEPEACHMSK1</displayName>
-                    <description>OTG_HS device each OUT endpoint-1 interrupt
-                        register</description>
-                    <addressOffset>0x80</addressOffset>
+                    <description>OTG device each OUT endpoint-1 interrupt mask register</description>
+                    <addressOffset>0x84</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
                     <resetValue>0x00000000</resetValue>
                     <fields>
                         <field>
                             <name>XFRCM</name>
-                            <description>Transfer completed interrupt
-                                mask</description>
+                            <description>Transfer completed interrupt mask</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>EPDM</name>
-                            <description>Endpoint disabled interrupt
-                                mask</description>
+                            <description>Endpoint disabled interrupt mask</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>TOM</name>
-                            <description>Timeout condition mask</description>
+                            <name>AHBERRM</name>
+                            <description>AHB error mask</description>
+                            <bitOffset>2</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>STUPM</name>
+                            <description>SETUP phase done mask</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>ITTXFEMSK</name>
-                            <description>IN token received when TxFIFO empty
-                                mask</description>
+                            <name>OTEPDM</name>
+                            <description>OUT token received when endpoint disabled mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>INEPNMM</name>
-                            <description>IN token received with EP mismatch
-                                mask</description>
-                            <bitOffset>5</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
-                            <name>INEPNEM</name>
-                            <description>IN endpoint NAK effective
-                                mask</description>
+                            <name>B2BSTUPM</name>
+                            <description>Back-to-back SETUP packets received mask</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>TXFURM</name>
+                            <name>OUTPKTERRM</name>
                             <description>OUT packet error mask</description>
                             <bitOffset>8</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>BIM</name>
-                            <description>BNA interrupt mask</description>
-                            <bitOffset>9</bitOffset>
-                            <bitWidth>1</bitWidth>
-                        </field>
-                        <field>
                             <name>BERRM</name>
-                            <description>Bubble error interrupt
-                                mask</description>
+                            <description>Babble error interrupt mask</description>
                             <bitOffset>12</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>NAKM</name>
+                            <name>NAKMSK</name>
                             <description>NAK interrupt mask</description>
                             <bitOffset>13</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>NYETM</name>
+                            <name>NYETMSK</name>
                             <description>NYET interrupt mask</description>
                             <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
