@@ -2120,8 +2120,7 @@
                 <register>
                     <name>DIEPCTL0</name>
                     <displayName>DIEPCTL0</displayName>
-                    <description>OTG device control IN endpoint 0 control
-                        register</description>
+                    <description>OTG device control IN endpoint 0 control register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -2163,7 +2162,7 @@
                         </field>
                         <field>
                             <name>TXFNUM</name>
-                            <description>TxFIFO number</description>
+                            <description>Tx FIFO number</description>
                             <bitOffset>22</bitOffset>
                             <bitWidth>4</bitWidth>
                             <access>read-write</access>
@@ -2204,8 +2203,7 @@
                     <dimIndex>1,2,3,4,5</dimIndex>
                     <name>DIEPCTL%s</name>
                     <displayName>DIEPCTL1</displayName>
-                    <description>OTG device IN endpoint x control
-                        register</description>
+                    <description>OTG device IN endpoint x control register</description>
                     <addressOffset>0x120</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -2226,7 +2224,7 @@
                         </field>
                         <field>
                             <name>EONUM_DPID</name>
-                            <description>Even/odd frame</description>
+                            <description>Even/odd frame / Endpoint data PID</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
@@ -2254,7 +2252,7 @@
                         </field>
                         <field>
                             <name>TXFNUM</name>
-                            <description>TxFIFO number</description>
+                            <description>Tx FIFO number</description>
                             <bitOffset>22</bitOffset>
                             <bitWidth>4</bitWidth>
                             <access>read-write</access>
@@ -2275,7 +2273,7 @@
                         </field>
                         <field>
                             <name>SD0PID_SEVNFRM</name>
-                            <description>Set DATA0 PID</description>
+                            <description>Set DATA0 PID / Set even frame</description>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
@@ -2308,24 +2306,21 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>DIEPINT%s</name>
                     <displayName>DIEPINT0</displayName>
-                    <description>OTG device IN endpoint x interrupt
-                        register</description>
+                    <description>OTG device IN endpoint x interrupt register</description>
                     <addressOffset>0x108</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000080</resetValue>
                     <fields>
                         <field>
                             <name>XFRC</name>
-                            <description>Transfer completed
-                                interrupt</description>
+                            <description>Transfer completed interrupt</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
                         <field>
                             <name>EPDISD</name>
-                            <description>Endpoint disabled
-                                interrupt</description>
+                            <description>Endpoint disabled interrupt</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
@@ -2339,9 +2334,15 @@
                         </field>
                         <field>
                             <name>ITTXFE</name>
-                            <description>IN token received when TxFIFO is
-                                empty</description>
+                            <description>IN token received when Tx FIFO is empty</description>
                             <bitOffset>4</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>INEPNM</name>
+                            <description>IN token received with EP mismatch</description>
+                            <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-write</access>
                         </field>
@@ -2359,13 +2360,33 @@
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
                         </field>
+                        <field>
+                            <name>TXFIFOUDRN</name>
+                            <description>Transmit FIFO underrun</description>
+                            <bitOffset>8</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>PKTDRPSTS</name>
+                            <description>Packet dropped status</description>
+                            <bitOffset>11</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
+                        <field>
+                            <name>NAK</name>
+                            <description>NAK interrupt</description>
+                            <bitOffset>13</bitOffset>
+                            <bitWidth>1</bitWidth>
+                            <access>read-write</access>
+                        </field>
                     </fields>
                 </register>
                 <register>
                     <name>DIEPTSIZ0</name>
                     <displayName>DIEPTSIZ0</displayName>
-                    <description>OTG device IN endpoint 0 transfer size
-                        register</description>
+                    <description>OTG device IN endpoint 0 transfer size register</description>
                     <addressOffset>0x110</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2391,8 +2412,7 @@
                     <dimIndex>1,2,3,4,5</dimIndex>
                     <name>DIEPTSIZ%s</name>
                     <displayName>DIEPTSIZ1</displayName>
-                    <description>OTG device IN endpoint x transfer size
-                        register</description>
+                    <description>OTG device IN endpoint x transfer size register</description>
                     <addressOffset>0x130</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2423,8 +2443,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>DTXFSTS%s</name>
                     <displayName>DTXFSTS0</displayName>
-                    <description>OTG device IN endpoint transmit FIFO
-                        status register</description>
+                    <description>OTG device IN endpoint transmit FIFO status register</description>
                     <addressOffset>0x118</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -2432,8 +2451,7 @@
                     <fields>
                         <field>
                             <name>INEPTFSAV</name>
-                            <description>IN endpoint TxFIFO space
-                                available</description>
+                            <description>IN endpoint Tx FIFO space available</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
@@ -2442,8 +2460,7 @@
                 <register>
                     <name>DOEPCTL0</name>
                     <displayName>DOEPCTL0</displayName>
-                    <description>OTG device control OUT endpoint 0 control
-                        register</description>
+                    <description>OTG device control OUT endpoint 0 control register</description>
                     <addressOffset>0x300</addressOffset>
                     <size>32</size>
                     <resetValue>0x00008000</resetValue>
@@ -2526,8 +2543,7 @@
                     <dimIndex>1,2,3,4,5</dimIndex>
                     <name>DOEPCTL%s</name>
                     <displayName>DOEPCTL1</displayName>
-                    <description>OTG device OUT endpoint x control
-                        register</description>
+                    <description>OTG device OUT endpoint x control register</description>
                     <addressOffset>0x320</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -2548,8 +2564,7 @@
                         </field>
                         <field>
                             <name>EONUM_DPID</name>
-                            <description>Even odd frame/Endpoint data
-                                PID</description>
+                            <description>Even odd frame/Endpoint data PID</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>read-only</access>
@@ -2598,15 +2613,14 @@
                         </field>
                         <field>
                             <name>SD0PID_SEVNFRM</name>
-                            <description>Set DATA0 PID/Set even
-                                frame</description>
+                            <description>Set DATA0 PID/Set even frame</description>
                             <bitOffset>28</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
                         </field>
                         <field>
-                            <name>SODDFRM</name>
-                            <description>Set odd frame</description>
+                            <name>SD1PID_SODDFRM</name>
+                            <description>Set DATA1 PID/Set odd frame</description>
                             <bitOffset>29</bitOffset>
                             <bitWidth>1</bitWidth>
                             <access>write-only</access>
@@ -2632,8 +2646,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>DOEPINT%s</name>
                     <displayName>DOEPINT0</displayName>
-                    <description>OTG device OUT endpoint x interrupt
-                        register</description>
+                    <description>OTG device OUT endpoint x interrupt register</description>
                     <addressOffset>0x308</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2641,15 +2654,13 @@
                     <fields>
                         <field>
                             <name>XFRC</name>
-                            <description>Transfer completed
-                                interrupt</description>
+                            <description>Transfer completed interrupt</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>EPDISD</name>
-                            <description>Endpoint disabled
-                                interrupt</description>
+                            <description>Endpoint disabled interrupt</description>
                             <bitOffset>1</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -2661,16 +2672,38 @@
                         </field>
                         <field>
                             <name>OTEPDIS</name>
-                            <description>OUT token received when endpoint
-                                disabled</description>
+                            <description>OUT token received when endpoint disabled</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
-                            <name>B2BSTUP</name>
-                            <description>Back-to-back SETUP packets
-                                received</description>
-                            <bitOffset>6</bitOffset>
+                            <name>STSPHSRX</name>
+                            <description>Status phase received for control write</description>
+                            <bitOffset>5</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>OUTPKTERR</name>
+                            <description>OUT packet error</description>
+                            <bitOffset>8</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>BERR</name>
+                            <description>Babble error interrupt</description>
+                            <bitOffset>12</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>NAK</name>
+                            <description>NAK input</description>
+                            <bitOffset>13</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
+                        <field>
+                            <name>NYET</name>
+                            <description>NYET interrupt</description>
+                            <bitOffset>14</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                     </fields>
@@ -2678,8 +2711,7 @@
                 <register>
                     <name>DOEPTSIZ0</name>
                     <displayName>DOEPTSIZ0</displayName>
-                    <description>OTG device OUT endpoint 0 transfer size
-                        register</description>
+                    <description>OTG device OUT endpoint 0 transfer size register</description>
                     <addressOffset>0x310</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2711,8 +2743,7 @@
                     <dimIndex>1,2,3,4,5</dimIndex>
                     <name>DOEPTSIZ%s</name>
                     <displayName>DOEPTSIZ1</displayName>
-                    <description>OTG device OUT endpoint x transfer size
-                        register</description>
+                    <description>OTG device OUT endpoint x transfer size register</description>
                     <addressOffset>0x330</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -2732,8 +2763,7 @@
                         </field>
                         <field>
                             <name>RXDPID_STUPCNT</name>
-                            <description>Received data PID/SETUP packet
-                                count</description>
+                            <description>Received data PID/SETUP packet count</description>
                             <bitOffset>29</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
