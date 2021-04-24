@@ -1363,13 +1363,18 @@
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
                         </field>
+                        <field>
+                            <name>RLDCTRL</name>
+                            <description>Reload control</description>
+                            <bitOffset>16</bitOffset>
+                            <bitWidth>1</bitWidth>
+                        </field>
                     </fields>
                 </register>
                 <register>
                     <name>HFNUM</name>
                     <displayName>HFNUM</displayName>
-                    <description>OTG host frame number/frame time
-                        remaining register</description>
+                    <description>OTG host frame number/frame time remaining register</description>
                     <addressOffset>0x8</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1392,43 +1397,36 @@
                 <register>
                     <name>HPTXSTS</name>
                     <displayName>HPTXSTS</displayName>
-                    <description>OTG host periodic transmit FIFO/queue
-                        status register</description>
+                    <description>OTG host periodic transmit FIFO/queue status register</description>
                     <addressOffset>0x10</addressOffset>
                     <size>32</size>
+                    <access>read-only</access>
                     <resetValue>0x00080100</resetValue>
                     <fields>
                         <field>
                             <name>PTXFSAVL</name>
-                            <description>Periodic transmit data FIFO space
-                                available</description>
+                            <description>Periodic transmit data FIFO space available</description>
                             <bitOffset>0</bitOffset>
                             <bitWidth>16</bitWidth>
-                            <access>read-write</access>
                         </field>
                         <field>
                             <name>PTXQSAV</name>
-                            <description>Periodic transmit request queue space
-                                available</description>
+                            <description>Periodic transmit request queue space available</description>
                             <bitOffset>16</bitOffset>
                             <bitWidth>8</bitWidth>
-                            <access>read-only</access>
                         </field>
                         <field>
                             <name>PTXQTOP</name>
-                            <description>Top of the periodic transmit request
-                                queue</description>
+                            <description>Top of the periodic transmit request queue</description>
                             <bitOffset>24</bitOffset>
                             <bitWidth>8</bitWidth>
-                            <access>read-only</access>
                         </field>
                     </fields>
                 </register>
                 <register>
                     <name>HAINT</name>
                     <displayName>HAINT</displayName>
-                    <description>OTG host all channels interrupt
-                        register</description>
+                    <description>OTG host all channels interrupt register</description>
                     <addressOffset>0x14</addressOffset>
                     <size>32</size>
                     <access>read-only</access>
@@ -1445,8 +1443,7 @@
                 <register>
                     <name>HAINTMSK</name>
                     <displayName>HAINTMSK</displayName>
-                    <description>OTG host all channels interrupt mask
-                        register</description>
+                    <description>OTG host all channels interrupt mask register</description>
                     <addressOffset>0x18</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1463,8 +1460,7 @@
                 <register>
                     <name>HPRT</name>
                     <displayName>HPRT</displayName>
-                    <description>OTG host port control and status
-                        register</description>
+                    <description>OTG host port control and status register</description>
                     <addressOffset>0x40</addressOffset>
                     <size>32</size>
                     <resetValue>0x00000000</resetValue>
@@ -1567,8 +1563,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>HCCHAR%s</name>
                     <displayName>HCCHAR0</displayName>
-                    <description>OTG host channel x characteristics
-                        register</description>
+                    <description>OTG host channel x characteristics register</description>
                     <addressOffset>0x100</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1641,8 +1636,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>HCSPLT%s</name>
                     <displayName>HCSPLT0</displayName>
-                    <description>OTG host channel x split control
-                        register</description>
+                    <description>OTG host channel x split control register</description>
                     <addressOffset>0x104</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1711,29 +1705,25 @@
                         </field>
                         <field>
                             <name>STALL</name>
-                            <description>STALL response received
-                                interrupt</description>
+                            <description>STALL response received interrupt</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>NAK</name>
-                            <description>NAK response received
-                                interrupt</description>
+                            <description>NAK response received interrupt</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>ACK</name>
-                            <description>ACK response received/transmitted
-                                interrupt</description>
+                            <description>ACK response received/transmitted interrupt</description>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>NYET</name>
-                            <description>Response received
-                                interrupt</description>
+                            <description>Not yet ready response received interrupt</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -1768,8 +1758,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>HCINTMSK%s</name>
                     <displayName>HCINTMSK0</displayName>
-                    <description>OTG host channel x interrupt mask
-                        register</description>
+                    <description>OTG host channel x interrupt mask register</description>
                     <addressOffset>0x10C</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1795,29 +1784,25 @@
                         </field>
                         <field>
                             <name>STALLM</name>
-                            <description>STALL response received interrupt
-                                mask</description>
+                            <description>STALL response received interrupt mask</description>
                             <bitOffset>3</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>NAKM</name>
-                            <description>NAK response received interrupt
-                                mask</description>
+                            <description>NAK response received interrupt mask</description>
                             <bitOffset>4</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>ACKM</name>
-                            <description>ACK response received/transmitted
-                                interrupt mask</description>
+                            <description>ACK response received/transmitted interrupt mask</description>
                             <bitOffset>5</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
                         <field>
                             <name>NYET</name>
-                            <description>response received interrupt
-                                mask</description>
+                            <description>Not yet ready response received interrupt mask</description>
                             <bitOffset>6</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -1852,8 +1837,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>HCTSIZ%s</name>
                     <displayName>HCTSIZ0</displayName>
-                    <description>OTG host channel x transfer size
-                        register</description>
+                    <description>OTG host channel x transfer size register</description>
                     <addressOffset>0x110</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1884,8 +1868,7 @@
                     <dimIncrement>0x20</dimIncrement>
                     <name>HCDMA%s</name>
                     <displayName>HCDMA0</displayName>
-                    <description>OTG host channel x DMA address
-                        register</description>
+                    <description>OTG host channel x DMA address register</description>
                     <addressOffset>0x114</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1915,8 +1898,7 @@
                 <register>
                     <name>DCFG</name>
                     <displayName>DCFG</displayName>
-                    <description>OTG device configuration
-                        register</description>
+                    <description>OTG device configuration register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
                     <access>read-write</access>
@@ -1930,8 +1912,7 @@
                         </field>
                         <field>
                             <name>NZLSOHSK</name>
-                            <description>Non-zero-length status OUT
-                                handshake</description>
+                            <description>Non-zero-length status OUT handshake</description>
                             <bitOffset>2</bitOffset>
                             <bitWidth>1</bitWidth>
                         </field>
@@ -1949,8 +1930,7 @@
                         </field>
                         <field>
                             <name>PERSCHIVL</name>
-                            <description>Periodic scheduling
-                                interval</description>
+                            <description>Periodic scheduling interval</description>
                             <bitOffset>24</bitOffset>
                             <bitWidth>2</bitWidth>
                         </field>
