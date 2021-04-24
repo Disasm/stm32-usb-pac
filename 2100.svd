@@ -3237,11 +3237,10 @@
                 <register>
                     <name>PCGCCTL</name>
                     <displayName>PCGCCTL</displayName>
-                    <description>OTG power and clock gating control
-                        register</description>
+                    <description>OTG power and clock gating control register</description>
                     <addressOffset>0x0</addressOffset>
                     <size>32</size>
-                    <resetValue>0x00000000</resetValue>
+                    <resetValue>0x200B8000</resetValue>
                     <fields>
                         <field>
                             <name>STPPCLK</name>
